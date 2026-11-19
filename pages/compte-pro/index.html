@@ -1,0 +1,310 @@
+<!doctype html>
+<html lang="fr" data-vat="ht">
+  <head>
+<meta name="robots" content="noindex, nofollow">
+<script>(function(){var B="/direct-mobilier-demo";var en=(document.documentElement.lang||"fr").slice(0,2)!=="fr";
+var M=en?"Online demo: the cart is only active on the live store.":"Démo en ligne : le panier n'est actif que sur la boutique.";
+var F=window.fetch;window.fetch=function(u,o){var s=String(u&&u.url||u);
+if(/\/cart\/(add|change)\.js/.test(s))return Promise.resolve(new Response(JSON.stringify({status:422,description:M}),{status:422,headers:{"Content-Type":"application/json"}}));
+if(/\/cart\.js(\?|$)/.test(s))return Promise.resolve(new Response('{"items":[],"total_price":0,"item_count":0}',{headers:{"Content-Type":"application/json"}}));
+return F.apply(this,arguments)};
+function go(l){var p=location.pathname.slice(B.length).replace(/^\/(en|de|it)(?=\/|$)/,"")||"/";location.href=B+(l&&l!=="fr"?"/"+l:"")+p+location.search}
+window.addEventListener("change",function(e){var s=e.target&&e.target.closest&&e.target.closest("[data-lang]");if(s){e.stopImmediatePropagation();go(s.value)}},true);
+window.addEventListener("submit",function(e){var a=(e.target.getAttribute("action")||"");if(/localization$/.test(a)){e.preventDefault();e.stopImmediatePropagation();go(new FormData(e.target).get("locale_code"))}},true);
+})();</script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="theme-color" content="#ffffff"><link rel="canonical" href="http://localhost/"><link rel="icon" type="image/png" sizes="32x32" href="/direct-mobilier-demo/cdn/assets/favicon-32.png">
+      <link rel="icon" type="image/svg+xml" href="/direct-mobilier-demo/cdn/assets/favicon.svg"><link rel="apple-touch-icon" href="/direct-mobilier-demo/cdn/assets/apple-touch-icon.png">
+    <title>Direct Mobilier</title><meta property="og:site_name" content="Direct Mobilier">
+<meta property="og:url" content="http://localhost/">
+<meta property="og:title" content="Direct Mobilier">
+<meta property="og:type" content="website">
+<meta property="og:description" content="Centrale d&#39;achat de mobilier CHR pour professionnels"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Direct Mobilier">
+<meta name="twitter:description" content="Centrale d&#39;achat de mobilier CHR pour professionnels">
+
+    <link rel="preload" href="/direct-mobilier-demo/cdn/assets/font-archivo-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/direct-mobilier-demo/cdn/assets/font-geist-latin.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+  @font-face { font-family: "Archivo"; font-style: normal; font-display: swap; font-weight: 100 900; font-stretch: 62% 125%; src: url("/direct-mobilier-demo/cdn/assets/font-archivo-latin.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+  @font-face { font-family: "Archivo"; font-style: normal; font-display: swap; font-weight: 100 900; font-stretch: 62% 125%; src: url("/direct-mobilier-demo/cdn/assets/font-archivo-latin-ext.woff2") format("woff2"); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+  @font-face { font-family: "Geist"; font-style: normal; font-display: swap; font-weight: 100 900; src: url("/direct-mobilier-demo/cdn/assets/font-geist-latin.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+  @font-face { font-family: "Geist"; font-style: normal; font-display: swap; font-weight: 100 900; src: url("/direct-mobilier-demo/cdn/assets/font-geist-latin-ext.woff2") format("woff2"); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+  @font-face { font-family: "Geist Mono"; font-style: normal; font-display: swap; font-weight: 100 900; src: url("/direct-mobilier-demo/cdn/assets/font-geist-mono-latin.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+  @font-face { font-family: "Geist Mono"; font-style: normal; font-display: swap; font-weight: 100 900; src: url("/direct-mobilier-demo/cdn/assets/font-geist-mono-latin-ext.woff2") format("woff2"); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+</style>
+
+    <link rel="stylesheet" href="/direct-mobilier-demo/cdn/assets/dt-theme.css">
+    <script>
+      try {
+        document.documentElement.dataset.vat = localStorage.getItem('dt-vat') === 'ttc' ? 'ttc' : 'ht';
+      } catch (e) {}
+      window.DT = {
+        pro: true,
+        locale: "fr",
+        currency: "EUR",
+        vatRate: 20,
+        freeShippingCents: 300000,
+        textileUrl: "https://textile.directchr.com",
+        tissus: [{"h":"orion","t":"Orion","f":"velours","md":60000,"fe":["M1","EN 1021-1+2"],"cm":"100 % polyester","lz":140,"ext":false,"c":[{"k":"101","h":"#2f35b1","co":["bleu"]},{"k":"606","h":"#47664f","co":["vert"]},{"k":"202","h":"#8e2b35","co":["rouge"]},{"k":"404","h":"#c49a2c","co":["jaune"]},{"k":"505","h":"#e5d6bd","co":["blanc-beige"]},{"k":"707","h":"#6e4a2f","co":["marron"]},{"k":"303","h":"#6b6762","co":["gris"]}]},{"h":"persee","t":"Persée","f":"effet-cuir","md":150000,"fe":["EN 1021-1+2","IMO"],"cm":"Polyuréthane sur support polyester","lz":140,"ext":false,"c":[{"k":"C1","h":"#7a4f33","co":["marron"]},{"k":"C2","h":"#2a2a2c","co":["gris"]},{"k":"C4","h":"#d8cbb6","co":["blanc-beige"]},{"k":"C5","h":"#3f5a45","co":["vert"]}]},{"h":"cassiopee","t":"Cassiopée","f":"textures","md":35000,"fe":["EN 1021-1+2"],"cm":"82 % polyester, 18 % laine","lz":140,"ext":false,"c":[{"k":"01","h":"#ece4d4","co":["blanc-beige"]},{"k":"02","h":"#9b958c","co":["gris"]},{"k":"03","h":"#7d8a6a","co":["vert"]}]},{"h":"altair","t":"Altaïr","f":"chenilles","md":100000,"fe":["Crib 5"],"cm":"88 % polyester, 12 % coton","lz":142,"ext":false,"c":[{"k":"11","h":"#8a5a33","co":["marron"]},{"k":"12","h":"#8d8b88","co":["gris"]},{"k":"13","h":"#a8678f","co":["rose-violet"]},{"k":"14","h":"#34519a","co":["bleu"]}]},{"h":"lyra","t":"Lyra","f":"outdoor","md":40000,"fe":[],"cm":"Acrylique teint masse","lz":140,"ext":true,"c":[{"k":"803","h":"#557a5e","co":["vert"]},{"k":"804","h":"#b4683a","co":["orange"]},{"k":"805","h":"#d9ccb4","co":["blanc-beige"]},{"k":"806","h":"#3d5d7a","co":["bleu"]}]}],
+        indexUrl: "/direct-mobilier-demo/cdn/assets/catalog-index.fr.json",
+        indexFallbackUrl: "/direct-mobilier-demo/collections/all/view-index.json",
+        pricesUrl: "/direct-mobilier-demo/collections/all/view-prices.json?c=",
+        routes: {
+          root: "/direct-mobilier-demo/",
+          collectionsAll: "/direct-mobilier-demo/collections/all",
+          cart: "/direct-mobilier-demo/cart"
+        },
+        i18n: {"tax":{"familles":{"chaises":"Chaises","fauteuils":"Fauteuils","tabourets":"Tabourets de bar","banquettes":"Banquettes","tables":"Tables","plateaux":"Plateaux de table","pietements":"Piètements","lounge":"Lounge & canapés","bains-de-soleil":"Bains de soleil","chambre":"Mobilier de chambre","terrasse":"Mobilier de terrasse"},"usages":{"restaurant":"Restaurant","bar":"Bar & café","hall":"Hall & lobby","chambre":"Chambre","terrasse":"Terrasse"},"env":{"interieur":"Intérieur","exterieur":"Extérieur"},"materiaux":{"bois":"Bois massif","acier":"Acier","aluminium":"Aluminium","fonte":"Fonte","polymere":"Polypropylène","resine-tressee":"Résine tressée","stratifie":"Stratifié HPL","compact":"Compact HPL","ceramique":"Céramique"},"caracteristiques":{"empilable":"Empilable","garnissable":"Garnissable","accoudoirs":"Avec accoudoirs","repose-pieds":"Repose-pieds","modulaire":"Modulaire","sur-mesure":"Sur mesure","pied-central":"Pied central","quatre-pieds":"Quatre pieds","patins-reglables":"Vérins réglables","dehoussable":"Déhoussable","livre-monte":"Livré monté"},"couleurs":{"blanc":"Blancs & crèmes","noir":"Noirs","gris":"Gris","bois-clair":"Bois clairs","bois-fonce":"Bois foncés","metal":"Laiton & métal","vert":"Verts","bleu":"Bleus","rouge":"Rouges & terracotta","jaune":"Jaunes & ocres"},"hauteurs":{"assise-basse":"Assise basse (lounge)","assise-standard":"Assise standard (45-48 cm)","comptoir":"Comptoir (65 cm)","bar":"Bar (75 cm)","table-basse":"Table basse","repas":"Table repas (75 cm)","mange-debout":"Mange-debout (110 cm)"},"normes":{"en16139-n2":"EN 16139 · niveau 2, usage intensif","en16139-n1":"EN 16139 · niveau 1, usage général","en15372-n2":"EN 15372 · niveau 2, usage intensif","en15372-n1":"EN 15372 · niveau 1, usage général","en1022":"EN 1022 · stabilité","en581-1":"EN 581-1 · extérieur, sécurité","en581-2":"EN 581-2 · sièges d'extérieur","en581-3":"EN 581-3 · tables d'extérieur","en16121":"EN 16121 · rangement non domestique"},"feu":{"en1021-1":"EN 1021-1 · cigarette","en1021-2":"EN 1021-2 · allumette","bs5852-crib5":"BS 5852 Crib 5 (Royaume-Uni)"},"tissus":{"velours":"Velours","chenilles":"Chenillé","textures":"Bouclette","effet-cuir":"Simili cuir","outdoor":"Tissu outdoor","naturels":"Lin & coton"}},"t":{"after_fabric":"après réception du tissu","anomalies_one":"{n} anomalie","anomalies_other":"{n} anomalies","avail_mixed":"{n} {unit} en stock ; le reste sur commande, {delai}.","avail_order":"Fabriqué sur commande : {delai}.","avail_stock":"En stock : {n} {unit}, expédié sous {days} jours ouvrés.","badge_new":"Nouveau","calc_counter":"1 tabouret tous les 60 cm de comptoir · {n} places","calc_fabric":"{n} ml de tissu","calc_result":"Il vous faut {qty}","calc_room":"{n} couverts · {t2} tables de 2 · {t4} tables de 4 · {ratio} m² par couvert","calc_rooms":"Pour {n} chambres","calc_used":"{qty} reportés dans la quantité","calc_wall":"60 cm par place assise · {n} places","card_bulk":"dès {n} :","cart_error":"Le panier n'a pas pu être mis à jour","chip_any_feu":"Classé feu, toutes normes","chip_fabric":"Tissu : {what}","chip_height":"Hauteur {n} cm","chip_level2":"Usage intensif (niveau 2)","chip_need":"{n} pièces dans une même finition","chip_new":"Nouveautés","chip_norm":"Norme {n}","chip_price_max":"≤ {n} €","chip_price_min":"≥ {n} €","clear_all":"Tout effacer","close":"Fermer","colour_n":"coloris {code}","com_laize":"Tissu client : laize utile de 140 cm au moins, certificat feu à fournir.","cond_linear":"Au mètre linéaire","cond_min":"minimum {n}","cond_pack":"Par {n}","cond_unit":"À la pièce","cote_linear":"sur mesure","delai_any":"Délai indifférent","delai_max":"Sous {n} semaines","delai_one":"Sur commande · {n} sem.","delai_range":"Sur commande · {min} à {max} sem.","delai_stock":"En stock","dim_ep":"Ép.","dim_h":"H","dim_ha":"Ha","dim_hac":"Hac","dim_l":"L","dim_p":"P","dims_linear":"P {p} × H {h} cm, au mètre","dims_range":"{from} à {to} cm","fabric_order_link":"Commander {n} ml sur Direct Textile","fav_toggle":"Ajouter ou retirer des favoris","favs_empty":"Aucun favori pour l'instant : touchez le cœur sur une fiche ou une carte.","filter_and_hint":"Toutes les valeurs cochées doivent être réunies.","filter_caract":"Caractéristiques","filter_couleurs":"Couleur de finition","filter_delai":"Délai","filter_dimensions":"Dimensions du plateau","filter_env":"Intérieur ou extérieur","filter_fams":"Famille","filter_feu":"Réaction au feu","filter_gammes":"Gamme","filter_hauteurs":"Hauteur","filter_materiaux":"Matériau de structure","filter_need":"Quantité et délai","filter_need_hint":"Seuls les modèles qui peuvent fournir cette quantité dans une même finition s'affichent, en stock ou fabriqués dans le délai choisi.","filter_new_only":"Nouveautés uniquement","filter_normes":"Résistance, usage collectif","filter_origines":"Fabrication","filter_prix":"Prix unitaire","filter_usages":"Espace","filters":"Filtres","finder_count_one":"{n} modèle correspond","finder_count_other":"{n} modèles correspondent","finder_empty":"Aucun modèle ne réunit ces critères dans une même finition. Baissez la quantité ou allongez le délai.","finder_widen":"Élargir la recherche","finish_out":"Cette finition est en cours de réapprovisionnement.","finish_selected":"Finition sélectionnée","finishes_count_one":"{n} finition","finishes_count_other":"{n} finitions","finishes_cover_one":"{n} finition peut fournir {qty} {unit}.","finishes_cover_other":"{n} finitions peuvent fournir {qty} {unit}.","form_send_error":"L'envoi a échoué. Réessayez dans un instant.","fullscreen_unavailable":"Plein écran indisponible dans ce navigateur","garni_com_short":"Tissu client (COM)","garni_warn_fire":"Ce tissu n'a pas de classement EN 1021 : le siège garni ne sera pas certifié feu.","garni_warn_outdoor":"Ce tissu n'est pas prévu pour l'extérieur : choisissez un tissu outdoor.","garni_warn_wear":"Moins de 30 000 tours Martindale : un peu léger pour une salle de restaurant.","ht":"HT","id_err_country":"Préfixe pays inconnu : commencez par FR, DE, BE…","id_err_empty":"Indiquez un SIRET ou un numéro de TVA.","id_err_format":"Format de numéro de TVA inattendu pour ce pays.","id_err_key":"Ce numéro n'est pas valide : vérifiez les chiffres.","id_err_length":"Un SIRET compte 14 chiffres.","id_ok_siret":"SIRET valide, il sera contrôlé dans l'annuaire des entreprises.","id_ok_vat":"Numéro de TVA valide, il sera contrôlé dans VIES.","id_ok_vat_non_eu":"Numéro reconnu, hors Union européenne : votre demande sera examinée par l'équipe.","lead_one":"{n} semaines","lead_range":"{min} à {max} semaines","martindale_n":"{n} tours Martindale","metrage_order":"à commander : {n} ml (coupe dès 3 ml)","metrage_per_ml":"{n} ml de tissu par mètre, laize 140 cm","metrage_per_piece":"{n} ml de tissu par pièce, laize 140 cm","metrage_total":"{n} ml de tissu pour {qty}","ml_unit":"ml","no_results_hint":"Retirez un filtre, baissez la quantité ou allongez le délai.","no_results_title":"Aucun modèle ne correspond à tous ces critères.","on_order":"Sur commande","pdf_error":"Le PDF n'a pas pu être créé. Réessayez dans un instant.","per_ml":"ml","per_piece":"pièce","pieces_unit":"pièces","plan_add":"Tout ajouter au panier","plan_added":"Équipement de la salle ajouté au panier","plan_bench":"de banquette · {n} places","plan_chairs":"chaises","plan_covers":"couverts","plan_empty":"Choisissez au moins un modèle pour voir les lignes de commande.","plan_fabric":"{n} ml de tissu à prévoir","plan_fabric_dt":"{name} : à commander {n} ml sur Direct Textile, livrés à l'atelier","plan_fabric_link":"Voir le tissu","plan_in_stock":"En stock","plan_kind_banquette":"Banquette","plan_kind_chairs":"Assises","plan_kind_tables2":"Tables de 2","plan_kind_tables4":"Tables de 4","plan_none":"Aucune","plan_ratio":"{ratio} m² par couvert, soit {surface} m² de salle.","plan_short":"{n} en stock seulement","plan_tables2":"tables de 2","plan_tables4":"tables de 4","plan_total":"Total HT indicatif","preview":"aperçu","price_from":"dès","price_max":"Max","price_min":"Min","prop_fabric":"Tissu","qty_ml":"Longueur en mètres","qty_pieces":"Nombre de pièces","relax_caract":"les caractéristiques","relax_couleurs":"la couleur","relax_delai":"le délai","relax_dimensions":"les dimensions","relax_env":"l'usage intérieur ou extérieur","relax_feu":"la norme feu","relax_free":"les mots libres","relax_hauteur":"la hauteur","relax_hauteurs":"la hauteur","relax_materiaux":"le matériau","relax_need":"la quantité","relax_normes":"la norme","relax_prixmax":"le prix","relax_tissu":"le tissu","relax_usages":"l'espace","reorder_partial":"{n} ligne(s) non ajoutée(s) au panier","reorder_partial_sub":"Finition épuisée ou quantité supérieure au stock.","restocking_short":"En réappro.","results_one":"{n} résultat","results_other":"{n} résultats","rule_linear":"Longueur au cm près, par 10 cm, {min} m au moins","rule_min":"Minimum {min} pièces","rule_pack":"Par colis de {n}, minimum {min} pièces","saving":"Économie","search_anyway":"Chercher quand même","search_by_colour":"Par couleur","search_by_fabric":"Garnissage","search_by_space":"Par espace","search_empty":"Aucun modèle pour « {q} ». Essayez un type (chaise, tabouret), un espace (terrasse), une finition (chêne, noir) ou une dimension (70x70).","search_fabric_note":"Le modèle est redessiné avec le tissu Direct Textile.","search_placeholders":"chaise empilable bois terrasse…|tabouret bar 75 velours vert…|table 70x70 pied central…|60 chaises en stock…|banquette sur mesure chenille…","search_popular":"chaise empilable terrasse|tabouret bar 75|table 70x70 pied central|fauteuil velours|banquette sur mesure|mange-debout extérieur","search_popular_title":"Populaires","search_recent":"Récentes","search_relaxed":"Aucun modèle ne réunit tous les critères : voici les plus proches, sans {what}.","search_suggestions":"Suggestions","search_tip":"Écrivez comme vous parlez : chaise empilable bois terrasse, tabouret bar 75 velours vert, table 70x70 pied central…","search_tip_title":"Astuce","search_title":"Recherche","search_understood":"Compris","sheet_error":"La fiche n'a pas pu être créée. Réessayez dans un instant.","show_models_one":"Voir le modèle","show_models_other":"Voir les {n} modèles","show_results_one":"Voir le résultat","show_results_other":"Voir les {n} résultats","stack_n":"Empilable × {n}","stock_in_finish":"{n} en stock dans cette finition","stock_ml":"{n} ml en stock","stock_pieces":"{n} en stock","stock_short":"Stock insuffisant : {n} {unit} dans cette version.","tarifs_count":"{n} modèles","tarifs_loading_error":"Les tarifs n'ont pas pu être chargés. Rechargez la page.","tarifs_none":"Aucun modèle ne correspond à ces critères.","then_order":"puis sur commande : {delai}","tier_from":"Dès {n} {unit}","tier_unit":"Prix unitaire","ttc":"TTC","variant_missing":"Cette combinaison n'existe pas : choisissez une autre version."}}
+
+      };
+    </script>
+    <script type="application/json" id="dt-pro">
+    {
+      "pdf": "/direct-mobilier-demo/cdn/assets/dt-pdf.js",
+      "brand": "DIRECT CHR",
+      "shop": "Direct Mobilier",
+      "site": "mobilier.directchr.com",
+      "email": "info@directchr.fr",
+      "lang": "fr",
+      "company": "Hôtel du Lac",
+      "country": "FR",
+      "vatRate": 20,
+      "freeShippingCents": 300000,
+      "seller": ["Direct Mobilier — L'Atelier des Architectes, SAS", "5 rue de l'Europe, 17340 Châtelaillon-Plage, France", "TVA FR31878425669", "info@directchr.fr"],
+      "client": ["Hôtel du Lac", "12 quai Napoléon III", "", "74000 Annecy", "France", "N° de TVA FR12123456789", "Camille Martin", "camille@hotel-du-lac.test"],
+      "labels": {
+        "page": "{n} / {total}",
+        "tarifs": {
+          "title": "Tarifs professionnels HT",
+          "issued": "Édité le {date}",
+          "model": "Modèle",
+          "family": "Famille",
+          "dims": "Dimensions (cm)",
+          "pack": "Conditionnement",
+          "minimum": "Minimum",
+          "unit": "Unité",
+          "price": "Prix HT dès",
+          "bulk": "Prix par quantité HT",
+          "bulk_qty": "À partir de",
+          "stock": "Disponibilité",
+          "lead": "Délai (semaines)",
+          "note": "Prix hors taxes et hors livraison, valables à la date d'édition, sous réserve du stock. Livraison offerte dès 3 000 € HT."
+        },
+        "quote": {
+          "title": "Devis",
+          "issued": "Édité le {date}",
+          "seller": "Vendeur",
+          "client": "Client",
+          "item": "Article",
+          "qty": "Quantité",
+          "unit_price": "Prix unitaire HT",
+          "total": "Total HT",
+          "subtotal": "Total HT",
+          "shipping": "Livraison",
+          "shipping_free": "Offerte",
+          "shipping_rate": "Selon le pays de livraison (France 89 € HT)",
+          "vat": "TVA (20 %)",
+          "reverse_charge": "Autoliquidation (client de l'UE avec n° de TVA)",
+          "total_ttc": "Total TTC",
+          "unit_piece": "pièce(s)",
+          "unit_ml": "ml",
+          "fabrics": "Tissu à fournir pour le garnissage",
+          "fabric_order": "à commander {n} ml sur Direct Textile",
+          "fabric_note": "Métrage pour une laize de 140 cm. Le tissu est livré à l'atelier ; le délai de fabrication court à sa réception.",
+          "terms": "Devis indicatif, valable 30 jours, sous réserve du stock disponible au moment de la commande. Délais de fabrication confirmés à la commande. Paiement par carte à la commande ou par virement sous 7 jours. Conditions générales de vente sur mobilier.directchr.com.",
+          "note": "Prix hors taxes. Livraison offerte dès 3 000 € HT."
+        }
+      }
+    }
+  </script>
+    <script src="/direct-mobilier-demo/cdn/assets/dt-theme.js" type="module"></script>
+    <script>window.Shopify={routes:{root:'/direct-mobilier-demo/'}}</script>
+  </head>
+  <body class="template-page">
+    <a class="skip" href="#main">Aller au contenu</a>
+    
+    <div id="shopify-section-announcement" class="shopify-section"><div class="topbar" role="note">
+  <div class="topbar-track"><span >Stock expédié sous 5 jours ouvrés</span><span class="dot-sep" aria-hidden="true"></span><span >Livraison offerte dès 3 000 € HT</span><span class="dot-sep" aria-hidden="true"></span><span >Sièges garnis avec un tissu Direct Textile</span><span class="dot-sep" aria-hidden="true"></span><span >Boutique réservée aux professionnels</span></div>
+</div>
+
+
+</div><div id="shopify-section-header" class="shopify-section"><header class="hdr" id="hdr" data-header>
+  <div class="hdr-row wrap">
+    <button class="icon-btn burger" type="button" data-mnav-open aria-label="Ouvrir le menu"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 7h16M4 12h16M4 17h10"/></svg>
+</button>
+    <a class="logo" href="/direct-mobilier-demo/" aria-label="Direct Mobilier, accueil">
+  <span class="logo-a">DIRECT</span><span class="logo-rule" aria-hidden="true"></span><span class="logo-b">MOBILIER</span>
+</a>
+
+
+    <dt-search class="search" data-index-url="/direct-mobilier-demo/cdn/assets/catalog-index.fr.json">
+      <form action="/direct-mobilier-demo/search" method="get" role="search">
+        <svg class="search-ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.5 4.5"/></svg>
+        <input data-q name="q" type="search" autocomplete="off" spellcheck="false" value="" placeholder="chaise empilable bois terrasse…" aria-label="Rechercher dans le catalogue" aria-controls="search-panel">
+        <input type="hidden" name="type" value="product">
+        <kbd class="search-kbd" aria-hidden="true">⌘K</kbd>
+      </form>
+    </dt-search>
+
+    <div class="hdr-actions"><div class="vat" role="group" aria-label="Affichage des prix">
+          <button type="button" data-vat="ht" aria-pressed="true">HT</button>
+          <button type="button" data-vat="ttc" aria-pressed="false">TTC</button>
+        </div><form method="post" action="/direct-mobilier-demo/localization" class="lang"><label class="vh" for="lang-header">Langue</label>
+    <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="8.5"/><path d="M3.5 12h17M12 3.5c2.4 2.4 3.6 5.2 3.6 8.5s-1.2 6.1-3.6 8.5c-2.4-2.4-3.6-5.2-3.6-8.5s1.2-6.1 3.6-8.5Z"/></svg>
+
+    <select id="lang-header" name="locale_code" data-lang><option value="fr" lang="fr" selected>Français</option><option value="en" lang="en">English</option><option value="de" lang="de">Deutsch</option><option value="it" lang="it">Italiano</option></select>
+    <noscript><button class="btn btn-sm btn-ghost" type="submit">Valider</button></noscript></form><a class="icon-btn" href="/direct-mobilier-demo/pages/espace-pro"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="8.5" r="3.5"/><path d="M5 20c1.2-3.6 4-5.5 7-5.5s5.8 1.9 7 5.5"/></svg>
+<span class="icon-label">Espace pro</span></a><a class="icon-btn" href="/direct-mobilier-demo/cart" data-cart-open>
+          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 5h2l2 10h10l2-7H7.2"/><circle cx="10" cy="19" r="1.3"/><circle cx="17" cy="19" r="1.3"/></svg>
+<span class="icon-label">Panier</span>
+          <span class="count" data-cart-count hidden>0</span>
+        </a></div>
+  </div>
+
+  <nav class="nav wrap" aria-label="Catalogue"><a class="nav-link nav-strong" href="/direct-mobilier-demo/collections/all"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="4" y="4" width="6.5" height="6.5" rx="1"/><rect x="13.5" y="4" width="6.5" height="6.5" rx="1"/><rect x="4" y="13.5" width="6.5" height="6.5" rx="1"/><rect x="13.5" y="13.5" width="6.5" height="6.5" rx="1"/></svg>
+Tout le catalogue mobilier</a><a class="nav-link" href="/direct-mobilier-demo/collections/nouveautes">Nouveautés</a><a class="nav-link" href="/direct-mobilier-demo/pages/contact">Contact</a><span class="nav-live"><span class="live-dot" aria-hidden="true"></span><span data-live-stock>…</span>&nbsp;pièces en stock</span>
+  </nav>
+
+  <div class="sp" id="search-panel" role="listbox" aria-label="Résultats de recherche" data-state="closed" hidden>
+    <div class="wrap sp-in">
+      <div data-sp-head></div>
+      <div class="sp-cols">
+        <aside class="sp-left" data-sp-left></aside>
+        <section class="sp-main" data-sp-main></section>
+        <aside class="sp-right" data-sp-right></aside>
+      </div>
+    </div>
+  </div>
+</header>
+<div class="sp-scrim" id="sp-scrim" data-state="closed" hidden></div>
+
+<aside class="mnav" id="mnav" aria-label="Menu" hidden>
+  <div class="drawer-head"><a class="logo logo-sm" href="/direct-mobilier-demo/" aria-label="Direct Mobilier, accueil">
+  <span class="logo-a">DIRECT</span><span class="logo-rule" aria-hidden="true"></span><span class="logo-b">MOBILIER</span>
+</a>
+<button class="close" type="button" data-close aria-label="Fermer"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m6 6 12 12M18 6 6 18"/></svg>
+</button></div>
+  <div class="mnav-list">
+    <a class="mega-fam" href="/direct-mobilier-demo/collections/all"><span></span><span class="n">Tout le catalogue mobilier</span><span class="q"></span></a><a class="mega-fam" href="/direct-mobilier-demo/pages/espace-pro"><span></span><span class="n">Espace pro</span><span class="q"></span></a><a class="mega-fam" href="/direct-mobilier-demo/collections/nouveautes"><span></span><span class="n">Nouveautés</span><span class="q"></span></a><a class="mega-fam" href="/direct-mobilier-demo/pages/contact"><span></span><span class="n">Contact</span><span class="q"></span></a><span class="h">Affichage des prix</span>
+      <div class="vat" role="group" aria-label="Affichage des prix">
+        <button type="button" data-vat="ht" aria-pressed="true">HT</button>
+        <button type="button" data-vat="ttc" aria-pressed="false">TTC</button>
+      </div><span class="h">Langue</span>
+    <form method="post" action="/direct-mobilier-demo/localization" class="lang"><label class="vh" for="lang-mnav">Langue</label>
+    <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="8.5"/><path d="M3.5 12h17M12 3.5c2.4 2.4 3.6 5.2 3.6 8.5s-1.2 6.1-3.6 8.5c-2.4-2.4-3.6-5.2-3.6-8.5s1.2-6.1 3.6-8.5Z"/></svg>
+
+    <select id="lang-mnav" name="locale_code" data-lang><option value="fr" lang="fr" selected>Français</option><option value="en" lang="en">English</option><option value="de" lang="de">Deutsch</option><option value="it" lang="it">Italiano</option></select>
+    <noscript><button class="btn btn-sm btn-ghost" type="submit">Valider</button></noscript></form>
+  </div>
+</aside>
+
+
+</div>
+    <main id="main" tabindex="-1">
+      <div id="shopify-section-main" class="shopify-section"><div class="wrap"><nav class="crumbs" aria-label="Fil d'Ariane"><a href="/direct-mobilier-demo/">Accueil</a><span aria-hidden="true">/</span><span>Demande de compte pro</span></nav>
+  <div class="pro-page">
+    <div class="pro-page-copy">
+      <span class="eyebrow">Professionnels de l'hôtellerie et de la restauration</span>
+      <h1>Ouvrez votre compte professionnel.</h1>
+      <p>Hôtels, restaurants, bars, architectes, agenceurs, collectivités : indiquez votre SIRET ou votre numéro de TVA. Le compte est validé automatiquement après contrôle ; les cas particuliers sont examinés par l'équipe.</p>
+      <div class="pro-list">
+        <div class="pro-item"><div class="k">Prix par quantité</div><div class="d">prix unitaire dégressif dès la quantité indiquée sur la fiche</div></div>
+        <div class="pro-item"><div class="k">SIRET ou TVA</div><div class="d">obligatoire : SIRET pour la France, numéro de TVA pour les autres pays</div></div>
+        <div class="pro-item"><div class="k">Contrôle</div><div class="d">annuaire des entreprises pour le SIRET, VIES pour la TVA européenne</div></div>
+        <div class="pro-item"><div class="k">3 000 € HT</div><div class="d">livraison offerte au-delà, sinon forfait par pays (France 89 € HT)</div></div>
+      </div><p class="form-msg is-ok">Votre compte professionnel est déjà actif.</p></div>
+    <dt-pro-request class="pro-form" data-endpoint="https://directchr-api.fr/mobilier/demandes-pro"><form method="post" action="/contact" id="pro-request-form"><input type="hidden" name="contact[subject]" value="Demande de compte pro">
+          <div class="field">
+            <label for="pr-company">Raison sociale</label>
+            <input id="pr-company" name="contact[company]" autocomplete="organization" required>
+          </div>
+          <div class="field">
+            <label for="pr-id">SIRET ou numéro de TVA</label>
+            <input id="pr-id" name="contact[identifier]" data-company-id autocomplete="off" spellcheck="false" placeholder="14 chiffres ou FR12 345678901" aria-describedby="pr-id-status" required>
+            <p class="field-status" id="pr-id-status" data-id-status aria-live="polite">SIRET pour une entreprise française, numéro de TVA intracommunautaire sinon.</p>
+            <input type="hidden" name="contact[identifier_type]" data-id-type>
+          </div>
+          <div class="field">
+            <label for="pr-country">Pays</label>
+            <select id="pr-country" name="contact[country]" autocomplete="country"><option value="FR" selected>France</option><option value="BE">Belgique</option><option value="DE">Allemagne</option><option value="NL">Pays-Bas</option><option value="AT">Autriche</option><option value="DK">Danemark</option><option value="HU">Hongrie</option><option value="IT">Italie</option><option value="PL">Pologne</option><option value="SK">Slovaquie</option><option value="SI">Slovénie</option><option value="CZ">Tchéquie</option><option value="HR">Croatie</option><option value="ES">Espagne</option><option value="FI">Finlande</option><option value="RO">Roumanie</option><option value="SE">Suède</option><option value="BG">Bulgarie</option><option value="EE">Estonie</option><option value="LV">Lettonie</option><option value="LT">Lituanie</option><option value="PT">Portugal</option><option value="IE">Irlande</option><option value="GR">Grèce</option></select>
+          </div>
+          <div class="field">
+            <label for="pr-activity">Activité</label>
+            <select id="pr-activity" name="contact[activity]"><option value="hotellerie">Hôtellerie</option><option value="restauration">Restauration, bar</option><option value="architecte">Architecte, décorateur</option><option value="agenceur">Agenceur, installateur</option><option value="collectivite">Collectivité, santé</option><option value="revendeur">Revendeur</option><option value="autre">Autre activité</option></select>
+          </div>
+          <div class="field-pair">
+            <div class="field">
+              <label for="pr-first-name">Prénom</label>
+              <input id="pr-first-name" name="contact[first_name]" autocomplete="given-name" value="Camille" required>
+            </div>
+            <div class="field">
+              <label for="pr-last-name">Nom</label>
+              <input id="pr-last-name" name="contact[last_name]" autocomplete="family-name" required>
+            </div>
+          </div>
+          <div class="field">
+            <label for="pr-email">E-mail professionnel</label>
+            <input id="pr-email" name="contact[email]" type="email" autocomplete="email" value="camille@hotel-du-lac.test" required>
+          </div>
+          <div class="field">
+            <label for="pr-phone">Téléphone</label>
+            <input id="pr-phone" name="contact[phone]" type="tel" autocomplete="tel">
+          </div>
+          <div class="field">
+            <label for="pr-body">Message (facultatif)</label>
+            <textarea id="pr-body" name="contact[body]" rows="3"></textarea>
+          </div>
+          <button class="btn btn-block magnetic" type="submit">Envoyer la demande <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14m-5-5 5 5-5 5"/></svg>
+</button>
+          <p class="form-msg is-error" data-form-error hidden></p>
+          <p class="form-note">Ces informations servent uniquement à l'ouverture de votre compte professionnel.</p></form><div class="form-msg is-ok" data-success role="status" hidden>Demande envoyée. Nous vérifions votre entreprise et revenons vers vous par e-mail.</div>
+      <div class="form-msg is-ok" data-approved role="status" hidden>Votre compte professionnel est ouvert : connectez-vous avec cette adresse e-mail, vous recevrez un code de connexion. <a href="/direct-mobilier-demo/account/login?return_to=%2Fcollections%2Fall">Se connecter</a></div>
+    </dt-pro-request>
+  </div>
+</div>
+
+
+</div>
+    </main>
+    <div id="shopify-section-footer" class="shopify-section"><footer class="ftr">
+  <div class="wrap ftr-grid">
+    <div class="ftr-brand">
+      <a class="logo logo-sm" href="/direct-mobilier-demo/" aria-label="Direct Mobilier, accueil">
+  <span class="logo-a">DIRECT</span><span class="logo-rule" aria-hidden="true"></span><span class="logo-b">MOBILIER</span>
+</a>
+
+      <p>Centrale d'achat de mobilier pour l'hôtellerie et la restauration, en direct des fabricants européens.</p>
+      <form method="post" action="/direct-mobilier-demo/localization" class="lang"><label class="vh" for="lang-footer">Langue</label>
+    <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="8.5"/><path d="M3.5 12h17M12 3.5c2.4 2.4 3.6 5.2 3.6 8.5s-1.2 6.1-3.6 8.5c-2.4-2.4-3.6-5.2-3.6-8.5s1.2-6.1 3.6-8.5Z"/></svg>
+
+    <select id="lang-footer" name="locale_code" data-lang><option value="fr" lang="fr" selected>Français</option><option value="en" lang="en">English</option><option value="de" lang="de">Deutsch</option><option value="it" lang="it">Italiano</option></select>
+    <noscript><button class="btn btn-sm btn-ghost" type="submit">Valider</button></noscript></form>
+    </div><div>
+          <h3>Informations</h3><a href="/direct-mobilier-demo/policies/terms-of-service">Conditions générales</a></div><div>
+      <h3>Conditions</h3>
+      <span>Stock expédié sous 5 jours ouvrés</span><span>Livraison offerte dès 3 000 € HT</span>
+      <span>Livraison sur rendez-vous</span>
+    </div>
+    <div>
+      <h3>Groupe DIRECT</h3>
+      <span>Direct CHR</span><a href="https://textile.directchr.com">Direct Textile</a><span>Direct Sol</span><span>Direct Literie</span>
+    </div>
+  </div>
+  <div class="wrap ftr-legal">
+    <span>© 2026 Direct Mobilier</span>
+    <span>Boutique réservée aux professionnels</span></div>
+</footer>
+
+
+</div>
+    <div class="scrim" id="scrim" hidden></div><div id="shopify-section-cart-drawer" class="shopify-section"><dt-cart-drawer class="drawer" id="cart" aria-label="Panier" hidden>
+    <div class="cart-content" data-cart-content data-count="0">
+      <div class="drawer-head"><h2>Panier</h2><button class="close" type="button" data-close aria-label="Fermer"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m6 6 12 12M18 6 6 18"/></svg>
+</button></div><div class="drawer-body"><div class="empty-cart"><strong>Votre panier est vide.</strong><a class="btn" href="/direct-mobilier-demo/collections/all">Voir le catalogue</a></div></div>
+    </div>
+  </dt-cart-drawer></div><aside class="sheet" id="sheet" aria-label="Filtres" hidden></aside>
+    <div class="toasts" id="toasts" aria-live="polite"></div>
+  </body>
+</html>

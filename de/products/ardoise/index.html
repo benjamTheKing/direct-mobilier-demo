@@ -1,0 +1,436 @@
+<!doctype html>
+<html lang="de" data-vat="ht">
+  <head>
+<meta name="robots" content="noindex, nofollow">
+<script>(function(){var B="/direct-mobilier-demo";var en=(document.documentElement.lang||"fr").slice(0,2)!=="fr";
+var M=en?"Online demo: the cart is only active on the live store.":"Démo en ligne : le panier n'est actif que sur la boutique.";
+var F=window.fetch;window.fetch=function(u,o){var s=String(u&&u.url||u);
+if(/\/cart\/(add|change)\.js/.test(s))return Promise.resolve(new Response(JSON.stringify({status:422,description:M}),{status:422,headers:{"Content-Type":"application/json"}}));
+if(/\/cart\.js(\?|$)/.test(s))return Promise.resolve(new Response('{"items":[],"total_price":0,"item_count":0}',{headers:{"Content-Type":"application/json"}}));
+return F.apply(this,arguments)};
+function go(l){var p=location.pathname.slice(B.length).replace(/^\/(en|de|it)(?=\/|$)/,"")||"/";location.href=B+(l&&l!=="fr"?"/"+l:"")+p+location.search}
+window.addEventListener("change",function(e){var s=e.target&&e.target.closest&&e.target.closest("[data-lang]");if(s){e.stopImmediatePropagation();go(s.value)}},true);
+window.addEventListener("submit",function(e){var a=(e.target.getAttribute("action")||"");if(/localization$/.test(a)){e.preventDefault();e.stopImmediatePropagation();go(new FormData(e.target).get("locale_code"))}},true);
+})();</script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="theme-color" content="#ffffff"><link rel="canonical" href="http://localhost/"><link rel="icon" type="image/png" sizes="32x32" href="/direct-mobilier-demo/cdn/assets/favicon-32.png">
+      <link rel="icon" type="image/svg+xml" href="/direct-mobilier-demo/cdn/assets/favicon.svg"><link rel="apple-touch-icon" href="/direct-mobilier-demo/cdn/assets/apple-touch-icon.png">
+    <title>Ardoise | Direct Mobilier</title><meta property="og:site_name" content="Direct Mobilier">
+<meta property="og:url" content="http://localhost/">
+<meta property="og:title" content="Ardoise">
+<meta property="og:type" content="product">
+<meta property="og:description" content="Centrale d&#39;achat de mobilier CHR pour professionnels"><meta property="og:image" content="https:/demo-img/m/ardoise/SCC/D60X60.svg?width=1200"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Ardoise">
+<meta name="twitter:description" content="Centrale d&#39;achat de mobilier CHR pour professionnels">
+
+    <link rel="preload" href="/direct-mobilier-demo/cdn/assets/font-archivo-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/direct-mobilier-demo/cdn/assets/font-geist-latin.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+  @font-face { font-family: "Archivo"; font-style: normal; font-display: swap; font-weight: 100 900; font-stretch: 62% 125%; src: url("/direct-mobilier-demo/cdn/assets/font-archivo-latin.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+  @font-face { font-family: "Archivo"; font-style: normal; font-display: swap; font-weight: 100 900; font-stretch: 62% 125%; src: url("/direct-mobilier-demo/cdn/assets/font-archivo-latin-ext.woff2") format("woff2"); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+  @font-face { font-family: "Geist"; font-style: normal; font-display: swap; font-weight: 100 900; src: url("/direct-mobilier-demo/cdn/assets/font-geist-latin.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+  @font-face { font-family: "Geist"; font-style: normal; font-display: swap; font-weight: 100 900; src: url("/direct-mobilier-demo/cdn/assets/font-geist-latin-ext.woff2") format("woff2"); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+  @font-face { font-family: "Geist Mono"; font-style: normal; font-display: swap; font-weight: 100 900; src: url("/direct-mobilier-demo/cdn/assets/font-geist-mono-latin.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+  @font-face { font-family: "Geist Mono"; font-style: normal; font-display: swap; font-weight: 100 900; src: url("/direct-mobilier-demo/cdn/assets/font-geist-mono-latin-ext.woff2") format("woff2"); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+</style>
+
+    <link rel="stylesheet" href="/direct-mobilier-demo/cdn/assets/dt-theme.css">
+    <script>
+      try {
+        document.documentElement.dataset.vat = localStorage.getItem('dt-vat') === 'ttc' ? 'ttc' : 'ht';
+      } catch (e) {}
+      window.DT = {
+        pro: true,
+        locale: "de",
+        currency: "EUR",
+        vatRate: 20,
+        freeShippingCents: 300000,
+        textileUrl: "https://textile.directchr.com",
+        tissus: [{"h":"orion","t":"Orion","f":"velours","md":60000,"fe":["M1","EN 1021-1+2"],"cm":"100 % polyester","lz":140,"ext":false,"c":[{"k":"101","h":"#2f35b1","co":["bleu"]},{"k":"606","h":"#47664f","co":["vert"]},{"k":"202","h":"#8e2b35","co":["rouge"]},{"k":"404","h":"#c49a2c","co":["jaune"]},{"k":"505","h":"#e5d6bd","co":["blanc-beige"]},{"k":"707","h":"#6e4a2f","co":["marron"]},{"k":"303","h":"#6b6762","co":["gris"]}]},{"h":"persee","t":"Persée","f":"effet-cuir","md":150000,"fe":["EN 1021-1+2","IMO"],"cm":"Polyuréthane sur support polyester","lz":140,"ext":false,"c":[{"k":"C1","h":"#7a4f33","co":["marron"]},{"k":"C2","h":"#2a2a2c","co":["gris"]},{"k":"C4","h":"#d8cbb6","co":["blanc-beige"]},{"k":"C5","h":"#3f5a45","co":["vert"]}]},{"h":"cassiopee","t":"Cassiopée","f":"textures","md":35000,"fe":["EN 1021-1+2"],"cm":"82 % polyester, 18 % laine","lz":140,"ext":false,"c":[{"k":"01","h":"#ece4d4","co":["blanc-beige"]},{"k":"02","h":"#9b958c","co":["gris"]},{"k":"03","h":"#7d8a6a","co":["vert"]}]},{"h":"altair","t":"Altaïr","f":"chenilles","md":100000,"fe":["Crib 5"],"cm":"88 % polyester, 12 % coton","lz":142,"ext":false,"c":[{"k":"11","h":"#8a5a33","co":["marron"]},{"k":"12","h":"#8d8b88","co":["gris"]},{"k":"13","h":"#a8678f","co":["rose-violet"]},{"k":"14","h":"#34519a","co":["bleu"]}]},{"h":"lyra","t":"Lyra","f":"outdoor","md":40000,"fe":[],"cm":"Acrylique teint masse","lz":140,"ext":true,"c":[{"k":"803","h":"#557a5e","co":["vert"]},{"k":"804","h":"#b4683a","co":["orange"]},{"k":"805","h":"#d9ccb4","co":["blanc-beige"]},{"k":"806","h":"#3d5d7a","co":["bleu"]}]}],
+        indexUrl: "/direct-mobilier-demo/cdn/assets/catalog-index.de.json",
+        indexFallbackUrl: "/direct-mobilier-demo/de/collections/all/view-index.json",
+        pricesUrl: "/direct-mobilier-demo/de/collections/all/view-prices.json?c=",
+        routes: {
+          root: "/direct-mobilier-demo/de",
+          collectionsAll: "/direct-mobilier-demo/de/collections/all",
+          cart: "/direct-mobilier-demo/de/cart"
+        },
+        i18n: {"tax":{"familles":{"chaises":"Stühle","fauteuils":"Sessel","tabourets":"Barhocker","banquettes":"Sitzbänke","tables":"Tische","plateaux":"Tischplatten","pietements":"Tischgestelle","lounge":"Lounge & Sofas","bains-de-soleil":"Sonnenliegen","chambre":"Hotelzimmermöbel","terrasse":"Terrassenmöbel"},"usages":{"restaurant":"Restaurant","bar":"Bar & Café","hall":"Lobby & Empfang","chambre":"Zimmer","terrasse":"Terrasse"},"env":{"interieur":"Innen","exterieur":"Außen"},"materiaux":{"bois":"Massivholz","acier":"Stahl","aluminium":"Aluminium","fonte":"Gusseisen","polymere":"Polypropylen","resine-tressee":"Kunststoffgeflecht","stratifie":"HPL-Schichtstoff","compact":"Kompakt-HPL","ceramique":"Keramik"},"caracteristiques":{"empilable":"Stapelbar","garnissable":"Polsterbar","accoudoirs":"Mit Armlehnen","repose-pieds":"Fußstütze","modulaire":"Modular","sur-mesure":"Nach Maß","pied-central":"Mittelfuß","quatre-pieds":"Vier Beine","patins-reglables":"Verstellbare Gleiter","dehoussable":"Abnehmbarer Bezug","livre-monte":"Montiert geliefert"},"couleurs":{"blanc":"Weiß & Creme","noir":"Schwarz","gris":"Grau","bois-clair":"Helle Hölzer","bois-fonce":"Dunkle Hölzer","metal":"Messing & Metall","vert":"Grün","bleu":"Blau","rouge":"Rot & Terrakotta","jaune":"Gelb & Ocker"},"hauteurs":{"assise-basse":"Niedrige Sitzhöhe (Lounge)","assise-standard":"Standard-Sitzhöhe (45-48 cm)","comptoir":"Theke (65 cm)","bar":"Bar (75 cm)","table-basse":"Couchtisch","repas":"Esstisch (75 cm)","mange-debout":"Stehtisch (110 cm)"},"normes":{"en16139-n2":"EN 16139 · Stufe 2, intensive Nutzung","en16139-n1":"EN 16139 · Stufe 1, allgemeine Nutzung","en15372-n2":"EN 15372 · Stufe 2, intensive Nutzung","en15372-n1":"EN 15372 · Stufe 1, allgemeine Nutzung","en1022":"EN 1022 · Standsicherheit","en581-1":"EN 581-1 · außen, Sicherheit","en581-2":"EN 581-2 · Sitzmöbel für außen","en581-3":"EN 581-3 · Tische für außen","en16121":"EN 16121 · Behältnismöbel, Nicht-Wohnbereich"},"feu":{"en1021-1":"EN 1021-1 · Zigarette","en1021-2":"EN 1021-2 · Streichholz","bs5852-crib5":"BS 5852 Crib 5 (Vereinigtes Königreich)"},"tissus":{"velours":"Samt","chenilles":"Chenille","textures":"Bouclé","effet-cuir":"Kunstleder","outdoor":"Outdoor-Stoff","naturels":"Leinen & Baumwolle"}},"t":{"after_fabric":"nach Eingang des Stoffes","anomalies_one":"{n} Problem","anomalies_other":"{n} Probleme","avail_mixed":"{n} {unit} auf Lager; der Rest auf Bestellung, {delai}.","avail_order":"Auf Bestellung gefertigt: {delai}.","avail_stock":"Auf Lager: {n} {unit}, Versand innerhalb von {days} Werktagen.","badge_new":"Neu","calc_counter":"1 Barhocker alle 60 cm Theke · {n} Plätze","calc_fabric":"{n} m Stoff","calc_result":"Sie benötigen {qty}","calc_room":"{n} Sitzplätze · {t2} 2er-Tische · {t4} 4er-Tische · {ratio} m² pro Sitzplatz","calc_rooms":"Für {n} Zimmer","calc_used":"{qty} in die Menge übernommen","calc_wall":"60 cm pro Sitzplatz · {n} Plätze","card_bulk":"ab {n}:","cart_error":"Der Warenkorb konnte nicht aktualisiert werden","chip_any_feu":"Schwer entflammbar, beliebige Norm","chip_fabric":"Stoff: {what}","chip_height":"Höhe {n} cm","chip_level2":"Intensive Nutzung (Stufe 2)","chip_need":"{n} Stück in einer Ausführung","chip_new":"Neuheiten","chip_norm":"Norm {n}","chip_price_max":"≤ {n} €","chip_price_min":"≥ {n} €","clear_all":"Alle entfernen","close":"Schließen","colour_n":"Farbe {code}","com_laize":"Kundenstoff: nutzbare Breite mindestens 140 cm, Brandschutzzertifikat erforderlich.","cond_linear":"Pro laufendem Meter","cond_min":"mindestens {n}","cond_pack":"Je {n} Stück","cond_unit":"Stückweise","cote_linear":"nach Maß","delai_any":"Beliebige Lieferzeit","delai_max":"Innerhalb von {n} Wochen","delai_one":"Auf Bestellung · {n} Wo.","delai_range":"Auf Bestellung · {min} bis {max} Wo.","delai_stock":"Auf Lager","dim_ep":"St.","dim_h":"H","dim_ha":"SH","dim_hac":"AH","dim_l":"B","dim_p":"T","dims_linear":"T {p} × H {h} cm, pro Meter","dims_range":"{from} bis {to} cm","fabric_order_link":"{n} m bei Direct Textile bestellen","fav_toggle":"Zu den Favoriten hinzufügen oder entfernen","favs_empty":"Noch keine Favoriten: Tippen Sie auf das Herz auf einer Produktseite oder einer Karte.","filter_and_hint":"Alle angehakten Werte müssen erfüllt sein.","filter_caract":"Eigenschaften","filter_couleurs":"Farbe der Ausführung","filter_delai":"Lieferzeit","filter_dimensions":"Plattenmaße","filter_env":"Innen oder außen","filter_fams":"Produktfamilie","filter_feu":"Brandverhalten","filter_gammes":"Serie","filter_hauteurs":"Höhe","filter_materiaux":"Gestellmaterial","filter_need":"Menge und Lieferzeit","filter_need_hint":"Es werden nur Modelle angezeigt, die diese Menge in einer einzigen Ausführung liefern können, ab Lager oder innerhalb der gewählten Lieferzeit gefertigt.","filter_new_only":"Nur Neuheiten","filter_normes":"Festigkeit, Objektbereich","filter_origines":"Herstellung","filter_prix":"Stückpreis","filter_usages":"Bereich","filters":"Filter","finder_count_one":"{n} Modell passt","finder_count_other":"{n} Modelle passen","finder_empty":"Kein Modell erfüllt diese Kriterien in einer einzigen Ausführung. Verringern Sie die Menge oder verlängern Sie die Lieferzeit.","finder_widen":"Suche erweitern","finish_out":"Diese Ausführung wird nachgeliefert.","finish_selected":"Gewählte Ausführung","finishes_count_one":"{n} Ausführung","finishes_count_other":"{n} Ausführungen","finishes_cover_one":"{n} Ausführung kann {qty} {unit} liefern.","finishes_cover_other":"{n} Ausführungen können {qty} {unit} liefern.","form_send_error":"Senden fehlgeschlagen. Bitte versuchen Sie es gleich noch einmal.","fullscreen_unavailable":"Der Vollbildmodus ist in diesem Browser nicht verfügbar","garni_com_short":"Kundenstoff (COM)","garni_warn_fire":"Dieser Stoff hat keine Klassifizierung nach EN 1021: Das gepolsterte Sitzmöbel ist nicht brandschutzzertifiziert.","garni_warn_outdoor":"Dieser Stoff ist nicht für den Außenbereich vorgesehen: Wählen Sie einen Outdoor-Stoff.","garni_warn_wear":"Weniger als 30.000 Scheuertouren (Martindale): etwas leicht für einen Restaurant-Gastraum.","ht":"zzgl. MwSt.","id_err_country":"Unbekanntes Länderkürzel: Beginnen Sie mit FR, DE, BE…","id_err_empty":"Geben Sie eine SIRET- oder USt-IdNr. ein.","id_err_format":"Unerwartetes Format der USt-IdNr. für dieses Land.","id_err_key":"Diese Nummer ist ungültig: Prüfen Sie die Ziffern.","id_err_length":"Eine SIRET hat 14 Ziffern.","id_ok_siret":"Gültige SIRET, sie wird im französischen Unternehmensregister geprüft.","id_ok_vat":"Gültige USt-IdNr., sie wird in VIES geprüft.","id_ok_vat_non_eu":"Nummer erkannt, außerhalb der EU: Ihre Anfrage wird vom Team geprüft.","lead_one":"{n} Wochen","lead_range":"{min} bis {max} Wochen","martindale_n":"{n} Scheuertouren (Martindale)","metrage_order":"zu bestellen: {n} m (Zuschnitt ab 3 m)","metrage_per_ml":"{n} m Stoff pro Meter, Stoffbreite 140 cm","metrage_per_piece":"{n} m Stoff pro Stück, Stoffbreite 140 cm","metrage_total":"{n} m Stoff für {qty}","ml_unit":"m","no_results_hint":"Entfernen Sie einen Filter, verringern Sie die Menge oder verlängern Sie die Lieferzeit.","no_results_title":"Kein Modell erfüllt alle diese Kriterien.","on_order":"Auf Bestellung","pdf_error":"Das PDF konnte nicht erstellt werden. Bitte versuchen Sie es gleich noch einmal.","per_ml":"m","per_piece":"Stück","pieces_unit":"Stück","plan_add":"Alles in den Warenkorb","plan_added":"Ausstattung des Gastraums in den Warenkorb gelegt","plan_bench":"Sitzbank · {n} Plätze","plan_chairs":"Stühle","plan_covers":"Sitzplätze","plan_empty":"Wählen Sie mindestens ein Modell, um die Bestellpositionen zu sehen.","plan_fabric":"{n} m Stoff einplanen","plan_fabric_dt":"{name}: {n} m bei Direct Textile bestellen, Lieferung an die Werkstatt","plan_fabric_link":"Stoff ansehen","plan_in_stock":"Auf Lager","plan_kind_banquette":"Sitzbank","plan_kind_chairs":"Sitzmöbel","plan_kind_tables2":"2er-Tische","plan_kind_tables4":"4er-Tische","plan_none":"Keine","plan_ratio":"{ratio} m² pro Sitzplatz, also {surface} m² Gastraum.","plan_short":"nur {n} auf Lager","plan_tables2":"2er-Tische","plan_tables4":"4er-Tische","plan_total":"Voraussichtliche Summe zzgl. MwSt.","preview":"Vorschau","price_from":"ab","price_max":"Max.","price_min":"Min.","prop_fabric":"Stoff","qty_ml":"Länge in Metern","qty_pieces":"Stückzahl","relax_caract":"die Eigenschaften","relax_couleurs":"die Farbe","relax_delai":"die Lieferzeit","relax_dimensions":"die Maße","relax_env":"den Innen- oder Außeneinsatz","relax_feu":"die Brandschutznorm","relax_free":"die freien Begriffe","relax_hauteur":"die Höhe","relax_hauteurs":"die Höhe","relax_materiaux":"das Material","relax_need":"die Menge","relax_normes":"die Norm","relax_prixmax":"den Preis","relax_tissu":"den Stoff","relax_usages":"den Bereich","reorder_partial":"{n} Position(en) nicht in den Warenkorb gelegt","reorder_partial_sub":"Ausführung ausverkauft oder Menge über dem Bestand.","restocking_short":"Nachlieferung","results_one":"{n} Ergebnis","results_other":"{n} Ergebnisse","rule_linear":"Länge nach Maß, in 10-cm-Schritten, mindestens {min} m","rule_min":"Mindestens {min} Stück","rule_pack":"Verpackungseinheit {n} Stück, mindestens {min} Stück","saving":"Ersparnis","search_anyway":"Trotzdem suchen","search_by_colour":"Nach Farbe","search_by_fabric":"Polsterung","search_by_space":"Nach Bereich","search_empty":"Kein Modell für „{q}“. Versuchen Sie eine Möbelart (Stuhl, Barhocker), einen Bereich (Terrasse), eine Ausführung (Eiche, schwarz) oder ein Maß (70x70).","search_fabric_note":"Das Modell wird mit dem Stoff von Direct Textile neu gezeichnet.","search_placeholders":"stapelbarer Holzstuhl Terrasse…|Barhocker 75 grüner Samt…|Tisch 70x70 Mittelfuß…|60 Stühle auf Lager…|Sitzbank nach Maß Chenille…","search_popular":"stapelbarer Terrassenstuhl|Barhocker 75|Tisch 70x70 Mittelfuß|Samtsessel|Sitzbank nach Maß|Stehtisch outdoor","search_popular_title":"Beliebt","search_recent":"Zuletzt gesucht","search_relaxed":"Kein Modell erfüllt alle Kriterien: Hier die nächstliegenden, ohne {what}.","search_suggestions":"Vorschläge","search_tip":"Schreiben Sie, wie Sie sprechen: stapelbarer Holzstuhl Terrasse, Barhocker 75 grüner Samt, Tisch 70x70 Mittelfuß…","search_tip_title":"Tipp","search_title":"Suche","search_understood":"Verstanden","sheet_error":"Das Datenblatt konnte nicht erstellt werden. Bitte versuchen Sie es gleich noch einmal.","show_models_one":"Modell ansehen","show_models_other":"Die {n} Modelle ansehen","show_results_one":"Ergebnis ansehen","show_results_other":"Die {n} Ergebnisse ansehen","stack_n":"Stapelbar × {n}","stock_in_finish":"{n} auf Lager in dieser Ausführung","stock_ml":"{n} m auf Lager","stock_pieces":"{n} auf Lager","stock_short":"Bestand nicht ausreichend: {n} {unit} in dieser Variante.","tarifs_count":"{n} Modelle","tarifs_loading_error":"Die Preise konnten nicht geladen werden. Bitte laden Sie die Seite neu.","tarifs_none":"Kein Modell entspricht diesen Kriterien.","then_order":"danach auf Bestellung: {delai}","tier_from":"Ab {n} {unit}","tier_unit":"Stückpreis","ttc":"inkl. MwSt.","variant_missing":"Diese Kombination gibt es nicht: Wählen Sie eine andere Variante."}}
+
+      };
+    </script>
+    <script type="application/json" id="dt-pro">
+    {
+      "pdf": "/direct-mobilier-demo/cdn/assets/dt-pdf.js",
+      "brand": "DIRECT CHR",
+      "shop": "Direct Mobilier",
+      "site": "mobilier.directchr.com",
+      "email": "info@directchr.fr",
+      "lang": "de",
+      "company": "Hôtel du Lac",
+      "country": "FR",
+      "vatRate": 20,
+      "freeShippingCents": 300000,
+      "seller": ["Direct Mobilier — L'Atelier des Architectes, SAS", "5 rue de l'Europe, 17340 Châtelaillon-Plage, France", "TVA FR31878425669", "info@directchr.fr"],
+      "client": ["Hôtel du Lac", "12 quai Napoléon III", "", "74000 Annecy", "France", "USt-IdNr. FR12123456789", "Camille Martin", "camille@hotel-du-lac.test"],
+      "labels": {
+        "page": "{n} / {total}",
+        "tarifs": {
+          "title": "Händlerpreise zzgl. MwSt.",
+          "issued": "Erstellt am {date}",
+          "model": "Modell",
+          "family": "Produktfamilie",
+          "dims": "Abmessungen (cm)",
+          "pack": "Verpackungseinheit",
+          "minimum": "Mindestmenge",
+          "unit": "Einheit",
+          "price": "Preis zzgl. MwSt. ab",
+          "bulk": "Mengenpreis zzgl. MwSt.",
+          "bulk_qty": "Ab",
+          "stock": "Verfügbarkeit",
+          "lead": "Lieferzeit (Wochen)",
+          "note": "Preise zzgl. MwSt. und Lieferung, gültig am Erstellungsdatum, solange der Vorrat reicht. Lieferung frei Haus ab 3.000 € zzgl. MwSt."
+        },
+        "quote": {
+          "title": "Angebot",
+          "issued": "Erstellt am {date}",
+          "seller": "Verkäufer",
+          "client": "Kunde",
+          "item": "Artikel",
+          "qty": "Menge",
+          "unit_price": "Einzelpreis zzgl. MwSt.",
+          "total": "Summe zzgl. MwSt.",
+          "subtotal": "Summe zzgl. MwSt.",
+          "shipping": "Lieferung",
+          "shipping_free": "Kostenlos",
+          "shipping_rate": "Je nach Lieferland (Frankreich 89 € zzgl. MwSt.)",
+          "vat": "MwSt. (20 %)",
+          "reverse_charge": "Steuerschuldnerschaft des Leistungsempfängers (EU-Kunde mit USt-IdNr.)",
+          "total_ttc": "Summe inkl. MwSt.",
+          "unit_piece": "Stück",
+          "unit_ml": "m",
+          "fabrics": "Bereitzustellender Bezugsstoff",
+          "fabric_order": "{n} m bei Direct Textile zu bestellen",
+          "fabric_note": "Stoffmenge für eine Stoffbreite von 140 cm. Der Stoff wird an die Werkstatt geliefert; die Fertigungszeit läuft ab seinem Eingang.",
+          "terms": "Unverbindliches Angebot, 30 Tage gültig, vorbehaltlich des bei der Bestellung verfügbaren Bestands. Fertigungszeiten werden bei der Bestellung bestätigt. Zahlung per Karte bei der Bestellung oder per Überweisung innerhalb von 7 Tagen. Allgemeine Verkaufsbedingungen auf mobilier.directchr.com.",
+          "note": "Preise zzgl. MwSt. Lieferung frei Haus ab 3.000 € zzgl. MwSt."
+        }
+      }
+    }
+  </script>
+    <script src="/direct-mobilier-demo/cdn/assets/dt-theme.js" type="module"></script>
+    <script>window.Shopify={routes:{root:'/direct-mobilier-demo/'}}</script>
+  </head>
+  <body class="template-product">
+    <a class="skip" href="#main">Zum Inhalt springen</a>
+    
+    <div id="shopify-section-announcement" class="shopify-section"><div class="topbar" role="note">
+  <div class="topbar-track"><span >Lagerware versandt innerhalb von 5 Werktagen</span><span class="dot-sep" aria-hidden="true"></span><span >Lieferung frei Haus ab 3.000 € zzgl. MwSt.</span><span class="dot-sep" aria-hidden="true"></span><span >Sitzmöbel mit einem Stoff von Direct Textile gepolstert</span><span class="dot-sep" aria-hidden="true"></span><span >Shop nur für Gewerbekunden</span></div>
+</div>
+
+
+</div><div id="shopify-section-header" class="shopify-section"><header class="hdr" id="hdr" data-header>
+  <div class="hdr-row wrap">
+    <button class="icon-btn burger" type="button" data-mnav-open aria-label="Menü öffnen"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 7h16M4 12h16M4 17h10"/></svg>
+</button>
+    <a class="logo" href="/direct-mobilier-demo/de" aria-label="Direct Mobilier, Startseite">
+  <span class="logo-a">DIRECT</span><span class="logo-rule" aria-hidden="true"></span><span class="logo-b">MOBILIER</span>
+</a>
+
+
+    <dt-search class="search" data-index-url="/direct-mobilier-demo/cdn/assets/catalog-index.de.json">
+      <form action="/direct-mobilier-demo/de/search" method="get" role="search">
+        <svg class="search-ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.5 4.5"/></svg>
+        <input data-q name="q" type="search" autocomplete="off" spellcheck="false" value="" placeholder="stapelbarer Holzstuhl Terrasse…" aria-label="Im Katalog suchen" aria-controls="search-panel">
+        <input type="hidden" name="type" value="product">
+        <kbd class="search-kbd" aria-hidden="true">⌘K</kbd>
+      </form>
+    </dt-search>
+
+    <div class="hdr-actions"><div class="vat" role="group" aria-label="Preisanzeige">
+          <button type="button" data-vat="ht" aria-pressed="true">zzgl. MwSt.</button>
+          <button type="button" data-vat="ttc" aria-pressed="false">inkl. MwSt.</button>
+        </div><form method="post" action="/direct-mobilier-demo/localization" class="lang"><label class="vh" for="lang-header">Sprache</label>
+    <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="8.5"/><path d="M3.5 12h17M12 3.5c2.4 2.4 3.6 5.2 3.6 8.5s-1.2 6.1-3.6 8.5c-2.4-2.4-3.6-5.2-3.6-8.5s1.2-6.1 3.6-8.5Z"/></svg>
+
+    <select id="lang-header" name="locale_code" data-lang><option value="fr" lang="fr">Français</option><option value="en" lang="en">English</option><option value="de" lang="de" selected>Deutsch</option><option value="it" lang="it">Italiano</option></select>
+    <noscript><button class="btn btn-sm btn-ghost" type="submit">OK</button></noscript></form><a class="icon-btn" href="/direct-mobilier-demo/de/pages/espace-pro"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="8.5" r="3.5"/><path d="M5 20c1.2-3.6 4-5.5 7-5.5s5.8 1.9 7 5.5"/></svg>
+<span class="icon-label">Händlerbereich</span></a><a class="icon-btn" href="/direct-mobilier-demo/de/cart" data-cart-open>
+          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 5h2l2 10h10l2-7H7.2"/><circle cx="10" cy="19" r="1.3"/><circle cx="17" cy="19" r="1.3"/></svg>
+<span class="icon-label">Warenkorb</span>
+          <span class="count" data-cart-count hidden>0</span>
+        </a></div>
+  </div>
+
+  <nav class="nav wrap" aria-label="Katalog"><a class="nav-link nav-strong" href="/direct-mobilier-demo/de/collections/all"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="4" y="4" width="6.5" height="6.5" rx="1"/><rect x="13.5" y="4" width="6.5" height="6.5" rx="1"/><rect x="4" y="13.5" width="6.5" height="6.5" rx="1"/><rect x="13.5" y="13.5" width="6.5" height="6.5" rx="1"/></svg>
+Gesamter Möbelkatalog</a><a class="nav-link" href="/direct-mobilier-demo/de/collections/nouveautes">Nouveautés</a><a class="nav-link" href="/direct-mobilier-demo/de/pages/contact">Contact</a><span class="nav-live"><span class="live-dot" aria-hidden="true"></span><span data-live-stock>…</span>&nbsp;Stück auf Lager</span>
+  </nav>
+
+  <div class="sp" id="search-panel" role="listbox" aria-label="Suchergebnisse" data-state="closed" hidden>
+    <div class="wrap sp-in">
+      <div data-sp-head></div>
+      <div class="sp-cols">
+        <aside class="sp-left" data-sp-left></aside>
+        <section class="sp-main" data-sp-main></section>
+        <aside class="sp-right" data-sp-right></aside>
+      </div>
+    </div>
+  </div>
+</header>
+<div class="sp-scrim" id="sp-scrim" data-state="closed" hidden></div>
+
+<aside class="mnav" id="mnav" aria-label="Menü" hidden>
+  <div class="drawer-head"><a class="logo logo-sm" href="/direct-mobilier-demo/de" aria-label="Direct Mobilier, Startseite">
+  <span class="logo-a">DIRECT</span><span class="logo-rule" aria-hidden="true"></span><span class="logo-b">MOBILIER</span>
+</a>
+<button class="close" type="button" data-close aria-label="Schließen"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m6 6 12 12M18 6 6 18"/></svg>
+</button></div>
+  <div class="mnav-list">
+    <a class="mega-fam" href="/direct-mobilier-demo/de/collections/all"><span></span><span class="n">Gesamter Möbelkatalog</span><span class="q"></span></a><a class="mega-fam" href="/direct-mobilier-demo/de/pages/espace-pro"><span></span><span class="n">Händlerbereich</span><span class="q"></span></a><a class="mega-fam" href="/direct-mobilier-demo/de/collections/nouveautes"><span></span><span class="n">Nouveautés</span><span class="q"></span></a><a class="mega-fam" href="/direct-mobilier-demo/de/pages/contact"><span></span><span class="n">Contact</span><span class="q"></span></a><span class="h">Preisanzeige</span>
+      <div class="vat" role="group" aria-label="Preisanzeige">
+        <button type="button" data-vat="ht" aria-pressed="true">zzgl. MwSt.</button>
+        <button type="button" data-vat="ttc" aria-pressed="false">inkl. MwSt.</button>
+      </div><span class="h">Sprache</span>
+    <form method="post" action="/direct-mobilier-demo/localization" class="lang"><label class="vh" for="lang-mnav">Sprache</label>
+    <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="8.5"/><path d="M3.5 12h17M12 3.5c2.4 2.4 3.6 5.2 3.6 8.5s-1.2 6.1-3.6 8.5c-2.4-2.4-3.6-5.2-3.6-8.5s1.2-6.1 3.6-8.5Z"/></svg>
+
+    <select id="lang-mnav" name="locale_code" data-lang><option value="fr" lang="fr">Français</option><option value="en" lang="en">English</option><option value="de" lang="de" selected>Deutsch</option><option value="it" lang="it">Italiano</option></select>
+    <noscript><button class="btn btn-sm btn-ghost" type="submit">OK</button></noscript></form>
+  </div>
+</aside>
+
+
+</div>
+    <main id="main" tabindex="-1">
+      <div id="shopify-section-main" class="shopify-section"><dt-product class="pdp-root" data-product-root>
+  <script type="application/json" data-product-json>
+    {
+      "handle": "ardoise",
+      "title": "Ardoise",
+      "famille": "tables",
+      "silhouette": "table-pied-central",
+      "dims": {"l":70,"p":70,"h":75,"ha":null,"pa":null,"hac":null},
+      "hauteurs": [75],
+      "unite": "piece",
+      "metrage": null,
+      "garnissable": false,
+      "env": ["interieur"],
+      "usages": ["restaurant","bar"],
+      "delai": [3,4],
+      "expedition": 5,
+      "pack": 1,
+      "minimum": 1,
+      "fixe": {"h":"#262626","m":"fonte"},
+      "options": [{"name":"Plateau","values":["Stratifié chêne clair","Stratifié noir","Stratifié blanc","Stratifié béton"]},{"name":"Dimensions","values":["60 × 60 cm","70 × 70 cm","80 × 80 cm","Ø 70 cm"]}],
+      "finitions": [{"code":"SCC","name":"Stratifié chêne clair","hex":"#cfae7f","matiere":"stratifie","couleurs":["bois-clair"],"image":"/direct-mobilier-demo/demo-img/m/ardoise/SCC/D60X60.svg?width=1024"},{"code":"SNO","name":"Stratifié noir","hex":"#1c1c1d","matiere":"stratifie","couleurs":["noir"],"image":"/direct-mobilier-demo/demo-img/m/ardoise/SNO/D60X60.svg?width=1024"},{"code":"SBL","name":"Stratifié blanc","hex":"#efede8","matiere":"stratifie","couleurs":["blanc"],"image":"/direct-mobilier-demo/demo-img/m/ardoise/SBL/D60X60.svg?width=1024"},{"code":"SBE","name":"Stratifié béton","hex":"#9d9a94","matiere":"stratifie","couleurs":["gris"],"image":"/direct-mobilier-demo/demo-img/m/ardoise/SBE/D60X60.svg?width=1024"}],
+      "variants": [{"id":1098,"sku":"ARD-SCC-D60X60","o":[0,0],"stock":24,"policy":"continue","min":1,"inc":1,"image":"/direct-mobilier-demo/demo-img/m/ardoise/SCC/D60X60.svg?width=1024","mt":null,"sh":null},{"id":1099,"sku":"ARD-SCC-D70X70","o":[0,1],"stock":60,"policy":"continue","min":1,"inc":1,"image":"/direct-mobilier-demo/demo-img/m/ardoise/SCC/D70X70.svg?width=1024","mt":null,"sh":null},{"id":1100,"sku":"ARD-SCC-D80X80","o":[0,2],"stock":20,"policy":"continue","min":1,"inc":1,"image":"/direct-mobilier-demo/demo-img/m/ardoise/SCC/D80X80.svg?width=1024","mt":null,"sh":null},{"id":1101,"sku":"ARD-SCC-DR70","o":[0,3],"stock":0,"policy":"continue","min":1,"inc":1,"image":"/direct-mobilier-demo/demo-img/m/ardoise/SCC/DR70.svg?width=1024","mt":null,"sh":null},{"id":1102,"sku":"ARD-SNO-D60X60","o":[1,0],"stock":0,"policy":"continue","min":1,"inc":1,"image":"/direct-mobilier-demo/demo-img/m/ardoise/SNO/D60X60.svg?width=1024","mt":null,"sh":null},{"id":1103,"sku":"ARD-SNO-D70X70","o":[1,1],"stock":40,"policy":"continue","min":1,"inc":1,"image":"/direct-mobilier-demo/demo-img/m/ardoise/SNO/D70X70.svg?width=1024","mt":null,"sh":null},{"id":1104,"sku":"ARD-SNO-D80X80","o":[1,2],"stock":12,"policy":"continue","min":1,"inc":1,"image":"/direct-mobilier-demo/demo-img/m/ardoise/SNO/D80X80.svg?width=1024","mt":null,"sh":null},{"id":1105,"sku":"ARD-SNO-DR70","o":[1,3],"stock":0,"policy":"continue","min":1,"inc":1,"image":"/direct-mobilier-demo/demo-img/m/ardoise/SNO/DR70.svg?width=1024","mt":null,"sh":null},{"id":1106,"sku":"ARD-SBL-D60X60","o":[2,0],"stock":0,"policy":"continue","min":1,"inc":1,"image":"/direct-mobilier-demo/demo-img/m/ardoise/SBL/D60X60.svg?width=1024","mt":null,"sh":null},{"id":1107,"sku":"ARD-SBL-D70X70","o":[2,1],"stock":0,"policy":"continue","min":1,"inc":1,"image":"/direct-mobilier-demo/demo-img/m/ardoise/SBL/D70X70.svg?width=1024","mt":null,"sh":null},{"id":1108,"sku":"ARD-SBL-D80X80","o":[2,2],"stock":0,"policy":"continue","min":1,"inc":1,"image":"/direct-mobilier-demo/demo-img/m/ardoise/SBL/D80X80.svg?width=1024","mt":null,"sh":null},{"id":1109,"sku":"ARD-SBL-DR70","o":[2,3],"stock":0,"policy":"continue","min":1,"inc":1,"image":"/direct-mobilier-demo/demo-img/m/ardoise/SBL/DR70.svg?width=1024","mt":null,"sh":null},{"id":1110,"sku":"ARD-SBE-D60X60","o":[3,0],"stock":0,"policy":"continue","min":1,"inc":1,"image":"/direct-mobilier-demo/demo-img/m/ardoise/SBE/D60X60.svg?width=1024","mt":null,"sh":null},{"id":1111,"sku":"ARD-SBE-D70X70","o":[3,1],"stock":0,"policy":"continue","min":1,"inc":1,"image":"/direct-mobilier-demo/demo-img/m/ardoise/SBE/D70X70.svg?width=1024","mt":null,"sh":null},{"id":1112,"sku":"ARD-SBE-D80X80","o":[3,2],"stock":0,"policy":"continue","min":1,"inc":1,"image":"/direct-mobilier-demo/demo-img/m/ardoise/SBE/D80X80.svg?width=1024","mt":null,"sh":null},{"id":1113,"sku":"ARD-SBE-DR70","o":[3,3],"stock":16,"policy":"continue","min":1,"inc":1,"image":"/direct-mobilier-demo/demo-img/m/ardoise/SBE/DR70.svg?width=1024","mt":null,"sh":null}],
+      "prices":{"1098":{"price":14900,"breaks":[]},"1099":{"price":16500,"breaks":[]},"1100":{"price":18900,"breaks":[]},"1101":{"price":17200,"breaks":[]},"1102":{"price":14900,"breaks":[]},"1103":{"price":16500,"breaks":[]},"1104":{"price":18900,"breaks":[]},"1105":{"price":17200,"breaks":[]},"1106":{"price":14900,"breaks":[]},"1107":{"price":16500,"breaks":[]},"1108":{"price":18900,"breaks":[]},"1109":{"price":17200,"breaks":[]},"1110":{"price":14900,"breaks":[]},"1111":{"price":16500,"breaks":[]},"1112":{"price":18900,"breaks":[]},"1113":{"price":17200,"breaks":[]}}
+    }
+  </script>
+  <script type="application/json" data-sheet-json>
+  {
+    "src": "/direct-mobilier-demo/cdn/assets/dt-pdf.js",
+    "file": "fiche-technique-ardoise.pdf",
+    "brand": "DIRECT CHR",
+    "shop": "Direct Mobilier",
+    "site": "mobilier.directchr.com",
+    "email": "info@directchr.fr",
+    "url": "http://localhost/products/ardoise",
+    "lang": "de",
+    "title": "Ardoise",
+    "subtitle": "Tische · Essentiel · Hergestellt in Italie",
+    "description": "Table de restaurant à pied central en fonte : plateau stratifié à chant ABS, quatre dimensions, livrée en trois jours.",
+    "image": "/direct-mobilier-demo/demo-img/m/ardoise/SCC/D60X60.svg?width=900",
+    "finitions": [{"name":"Stratifié chêne clair","out":false},{"name":"Stratifié noir","out":false},{"name":"Stratifié blanc","out":false},{"name":"Stratifié béton","out":false}],
+    "labels": {
+      "sheet": "Technisches Datenblatt",
+      "description": "Beschreibung",
+      "finishes": "Ausführungen",
+      "config": "Gewählte Konfiguration",
+      "restocking": "Wird nachgeliefert",
+      "disclaimer": "Unverbindliches Dokument, erstellt am {date}. Herstellerangaben; Farben können auf dem Bildschirm und im Druck abweichen.",
+      "page": "{n} / {total}"
+    }
+  }
+</script>
+
+  <div class="wrap">
+    <nav class="crumbs" aria-label="Navigationspfad">
+      <a href="/direct-mobilier-demo/de">Startseite</a><span aria-hidden="true">/</span><a href="/direct-mobilier-demo/de/collections/tables">Tische</a><span aria-hidden="true">/</span><span>Ardoise</span>
+    </nav>
+    <div class="pdp">
+      <div class="pdp-media">
+        <dt-viewer class="studio" data-view="photo" data-title="Ardoise"><img src="/direct-mobilier-demo/demo-img/m/ardoise/SCC/D60X60.svg?width=1200" alt="Ardoise" class="photo" data-photo loading="eager" fetchpriority="high"><div class="draw-stage" data-draw role="img" aria-label="Ardoise, gezeichnet mit der gewählten Ausführung und dem gewählten Stoff"></div>
+          <div class="studio-top">
+            <div class="seg scenes" role="group" aria-label="Ansicht">
+              <button type="button" data-view="photo" aria-pressed="true"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 8h3l2-2.5h6L17 8h3v11H4z"/><circle cx="12" cy="13.5" r="3.5"/></svg>
+<span>Foto</span></button>
+              <button type="button" data-view="config" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 20 9.5 4.5l3.8 1.1L9 20z"/><path d="m9.4 19.6 7-12.4 3.4 2-6.4 10.8"/><circle cx="9.2" cy="17.6" r=".9"/></svg>
+<span>Konfiguration</span></button>
+              <button type="button" data-view="cotes" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m3 16 13-13 5 5L8 21z"/><path d="m7 12 2 2M10 9l2 2M13 6l2 2"/></svg>
+<span>Maße</span></button>
+            </div>
+          </div>
+          <div class="studio-side">
+            <button type="button" data-fullscreen><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg>
+<span>Vergrößern</span></button>
+          </div>
+          <div class="studio-color" data-viewer-chip></div><span class="hud hud-a">EN 15372 · N2</span><span class="viewer-hint"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m12 3 8 4.5v9L12 21l-8-4.5v-9L12 3Z"/><path d="M12 12 4 7.5M12 12l8-4.5M12 12v9"/></svg>
+ <span>Zeichnung passt sich Ihrer Auswahl an</span></span>
+        </dt-viewer>
+      </div>
+
+      <div class="pdp-info">
+        <div class="pdp-top">
+          <div class="tags"><a class="badge" href="/direct-mobilier-demo/de/collections/tables">Tische</a><span class="badge taupe">Essentiel</span><span class="badge outline">EN 15372 · N2</span></div>
+          <div class="pdp-title"><h1>Ardoise</h1><button class="fav fav-inline" type="button" data-fav="ardoise" aria-pressed="false" aria-label="Zu den Favoriten hinzufügen oder entfernen"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/></svg>
+</button></div>
+          <span class="ref">Hergestellt in Italie · 4 Ausführungen · 172 auf Lager</span>
+        </div>
+        
+        <div class="dims-strip" aria-label="Hauptmaße (cm)"><span><small>B</small><b>70</b></span><span><small>T</small><b>70</b></span><span><small>H</small><b>75</b></span><span><small>Gewicht</small><b>19<i>kg</i></b></span><span><small>Stapelbar</small><b>–</b></span>
+        </div><div class="usage-row" aria-label="Bereiche"><span class="on"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M7 3v7a2 2 0 0 0 4 0V3M9 12v9M16.5 21V3c-2 1.4-3.5 4-3.5 7.5V13h3.5"/></svg>
+<small>Restaurant</small></span><span class="on"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 4h14l-7 8.5zM12 12.5V20M8 20h8M7.5 7h9"/></svg>
+<small>Bar & Café</small></span><span class=""><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5.5 11V8a3 3 0 0 1 3-3h7a3 3 0 0 1 3 3v3"/><path d="M3 11h3.5v3.5h11V11H21v6H3zM5 17v2.5M19 17v2.5"/></svg>
+<small>Lobby & Empfang</small></span><span class=""><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3 19V6M3 14h18v5M21 14v-2.5a3 3 0 0 0-3-3h-7V14M6 11.5h2.5"/></svg>
+<small>Zimmer</small></span><span class=""><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 3.5a8.5 8.5 0 0 1 8.5 7.5h-17A8.5 8.5 0 0 1 12 3.5zM12 11v9.5M7.5 20.5h9"/></svg>
+<small>Terrasse</small></span></div><div class="price-block"><div class="price-main"><span class="v" data-unit><span data-ht>149,00 €</span><span data-ttc>178,80 €</span></span><span class="u">/ <span data-unit-per>Stück</span> <span data-ht>zzgl. MwSt.</span><span data-ttc>inkl. MwSt.</span></span></div>
+            <div class="tiers" data-tiers aria-label="Händlerpreise">
+              <div class="tier" data-active="true"><span class="k">Stückpreis</span><span class="p"><span data-ht>149,00 €</span><span data-ttc>178,80 €</span></span></div></div>
+          </div><div class="colors">
+          <div class="col-hero" data-col-hero></div><div class="opt-h"><span class="eyebrow">Plateau</span><b data-opt-value="0"></b></div>
+          <div class="swatches" data-picker role="group" aria-label="Plateau"><button type="button" class="swatch mat-stratifie" data-opt="0" data-val="0" data-fams="bois-clair" style="--c:#cfae7f" aria-pressed="false" aria-label="Stratifié chêne clair · Auf Lager" title="Stratifié chêne clair · Auf Lager"><span class="sw-code">SCC</span></button><button type="button" class="swatch mat-stratifie" data-opt="0" data-val="1" data-fams="noir" style="--c:#1c1c1d" aria-pressed="false" aria-label="Stratifié noir · Auf Lager" title="Stratifié noir · Auf Lager"><span class="sw-code">SNO</span></button><button type="button" class="swatch mat-stratifie is-order" data-opt="0" data-val="2" data-fams="blanc" style="--c:#efede8" aria-pressed="false" aria-label="Stratifié blanc · Auf Bestellung, 3 bis 4 Wochen" title="Stratifié blanc · Auf Bestellung, 3 bis 4 Wochen"><span class="sw-code">SBL</span></button><button type="button" class="swatch mat-stratifie" data-opt="0" data-val="3" data-fams="gris" style="--c:#9d9a94" aria-pressed="false" aria-label="Stratifié béton · Auf Lager" title="Stratifié béton · Auf Lager"><span class="sw-code">SBE</span></button></div>
+          <p class="sw-legend"><span><i class="sw-dot" aria-hidden="true"></i>Auf Lager</span><span><i class="sw-dot is-order" aria-hidden="true"></i>Auf Bestellung, 3 bis 4 Wochen</span></p>
+        </div><div class="opt-group">
+            <div class="opt-h"><span class="eyebrow">Dimensions</span><b data-opt-value="1"></b></div>
+            <div class="opt-row" role="group" aria-label="Dimensions"><button type="button" class="opt-btn" data-opt="1" data-val="0" aria-pressed="false">60 × 60 cm</button><button type="button" class="opt-btn" data-opt="1" data-val="1" aria-pressed="false">70 × 70 cm</button><button type="button" class="opt-btn" data-opt="1" data-val="2" aria-pressed="false">80 × 80 cm</button><button type="button" class="opt-btn" data-opt="1" data-val="3" aria-pressed="false">Ø 70 cm</button></div>
+          </div><p class="avail" data-avail></p><div class="buy">
+            <div class="qty-row">
+              <div class="qty">
+                <button type="button" data-step="-1" aria-label="Verringern">−</button>
+                <input data-qty type="number" min="1" step="1" inputmode="decimal" value="1" aria-label="Stückzahl">
+                <button type="button" data-step="1" aria-label="Erhöhen">+</button>
+              </div>
+              <span class="qty-unit" data-qty-unit>Stück</span>
+              <div class="total"><span class="t" data-total></span><span class="s" data-saving></span><span class="w" data-warn hidden></span></div>
+            </div>
+            <p class="qty-rule" data-qty-rule></p>
+          </div><details class="calc" data-calc="tables">
+            <summary><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m3 16 13-13 5 5L8 21z"/><path d="m7 12 2 2M10 9l2 2M13 6l2 2"/></svg>
+<span>Für meinen Gastraum berechnen</span><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg>
+</summary>
+            <div class="calc-body">
+              <div class="calc-fields"><div class="field"><label for="c-surface">Fläche des Gastraums (m²)</label><input id="c-surface" name="surface" type="number" min="0" step="1" value="80" inputmode="numeric"></div>
+                    <div class="field"><label for="c-covers">Oder Anzahl Sitzplätze</label><input id="c-covers" name="couverts" type="number" min="0" step="1" placeholder="leer: nach Fläche" inputmode="numeric"></div>
+                    <div class="field"><label for="c-type">Betriebsart</label><select id="c-type" name="type"><option value="bar" data-ratio="1.1" data-part2="0.7">Café, Bar · 1.1 m² pro Sitzplatz</option><option value="brasserie" data-ratio="1.2" data-part2="0.6" selected>Brasserie, Bistro · 1.2 m² pro Sitzplatz</option><option value="traditionnel" data-ratio="1.4" data-part2="0.5">Traditionelles Restaurant · 1.4 m² pro Sitzplatz</option><option value="gastronomique" data-ratio="1.8" data-part2="0.5">Gehobene Gastronomie · 1.8 m² pro Sitzplatz</option><option value="petit-dejeuner" data-ratio="1.4" data-part2="0.4">Frühstücksraum · 1.4 m² pro Sitzplatz</option><option value="terrasse" data-ratio="1.2" data-part2="0.7">Terrasse · 1.2 m² pro Sitzplatz</option></select>
+</div></div>
+              <div class="calc-out"><span data-calc-res></span><button class="btn btn-sm" type="button" data-calc-use>Übernehmen</button></div>
+              <p class="calc-note">Unverbindliche Schätzung: anhand des Grundrisses prüfen, unter Berücksichtigung der Verkehrsflächen und der zulässigen Personenzahl Ihres Betriebs.</p>
+            </div>
+          </details><div class="cta-row" data-cta-row>
+            <button class="btn magnetic" type="button" data-add><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 5h2l2 10h10l2-7H7.2"/><circle cx="10" cy="19" r="1.3"/><circle cx="17" cy="19" r="1.3"/></svg>
+ In den Warenkorb</button>
+          </div><div class="ship">
+  <div><b>Verkauf</b>Stückweise · 3 bis 4 Wochen</div>
+  <div><b>Lieferung frei Haus ab 3.000 € zzgl. MwSt.</b>Sonst Pauschale pro Land, Frankreich 89 € zzgl. MwSt.</div>
+  <div><b>Lieferung nach Terminvereinbarung</b>frei Bordsteinkante; Pakete bei Erhalt prüfen</div>
+</div>
+<details class="order-note" data-order-note>
+  <summary>Fertigung auf Bestellung</summary>
+  <ul>
+    <li>Die angegebene Lieferzeit läuft ab der Freigabe der Bestellung; sie wird in der Auftragsbestätigung bestätigt.</li><li>Eine begonnene Fertigung kann weder storniert noch geändert werden.</li>
+    <li>Lieferung nach Terminvereinbarung frei Bordsteinkante: Prüfen Sie die Pakete und vermerken Sie Vorbehalte auf dem Lieferschein des Spediteurs.</li>
+  </ul>
+</details>
+<button class="sheet-btn" type="button" data-sheet-pdf><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 4v11m-4.5-4.5L12 15l4.5-4.5"/><path d="M5 19.5h14"/></svg>
+<span>Technisches Datenblatt herunterladen (PDF)</span></button>
+      </div>
+    </div><div class="pdp pdp-after"><div aria-hidden="true"></div><div class="pdp-desc desc rte"><p>Table de restaurant à pied central en fonte : plateau stratifié à chant ABS, quatre dimensions, livrée en trois jours.</p></div></div></div>
+
+  <section class="section-tight wrap" aria-labelledby="h-nuancier">
+    <div class="section-head"><div><span class="eyebrow">4 Ausführungen · 172 auf Lager</span><h2 id="h-nuancier">Ausführungen und Verfügbarkeit</h2></div></div>
+    <div class="nuancier is-many">
+      <div class="fan" data-picker style="--spread:44" role="group" aria-label="Farbfächer der Ausführungen"><button type="button" class="blade mat-stratifie" data-opt="0" data-val="0" style="rotate:-22deg;--c:#cfae7f" aria-pressed="false" aria-label="Stratifié chêne clair"><span>Stratifié chêne clair</span></button><button type="button" class="blade mat-stratifie" data-opt="0" data-val="1" style="rotate:-8deg;--c:#1c1c1d" aria-pressed="false" aria-label="Stratifié noir"><span>Stratifié noir</span></button><button type="button" class="blade mat-stratifie is-order" data-opt="0" data-val="2" style="rotate:7deg;--c:#efede8" aria-pressed="false" aria-label="Stratifié blanc"><span>Stratifié blanc</span></button><button type="button" class="blade mat-stratifie" data-opt="0" data-val="3" style="rotate:22deg;--c:#9d9a94" aria-pressed="false" aria-label="Stratifié béton"><span>Stratifié béton</span></button><span class="fan-pin" aria-hidden="true"></span></div>
+      <div class="stockbars is-grid" data-stockbars><button type="button" class="sbar" data-variant="1098" data-stock="24" aria-pressed="false"><i class="sw mat-stratifie" style="--c:#cfae7f"></i><span class="n">Stratifié chêne clair · 60 × 60 cm</span><span class="track"><span style="transform:scaleX(0.4)"></span></span><span class="v mono">24 Stück</span></button><button type="button" class="sbar" data-variant="1099" data-stock="60" aria-pressed="false"><i class="sw mat-stratifie" style="--c:#cfae7f"></i><span class="n">Stratifié chêne clair · 70 × 70 cm</span><span class="track"><span style="transform:scaleX(1)"></span></span><span class="v mono">60 Stück</span></button><button type="button" class="sbar" data-variant="1100" data-stock="20" aria-pressed="false"><i class="sw mat-stratifie" style="--c:#cfae7f"></i><span class="n">Stratifié chêne clair · 80 × 80 cm</span><span class="track"><span style="transform:scaleX(0.333)"></span></span><span class="v mono">20 Stück</span></button><button type="button" class="sbar is-order" data-variant="1101" data-stock="0" aria-pressed="false"><i class="sw mat-stratifie" style="--c:#cfae7f"></i><span class="n">Stratifié chêne clair · Ø 70 cm</span><span class="track"><span style="transform:scaleX(0)"></span></span><span class="v">3 bis 4 Wochen</span></button><button type="button" class="sbar is-order" data-variant="1102" data-stock="0" aria-pressed="false"><i class="sw mat-stratifie" style="--c:#1c1c1d"></i><span class="n">Stratifié noir · 60 × 60 cm</span><span class="track"><span style="transform:scaleX(0)"></span></span><span class="v">3 bis 4 Wochen</span></button><button type="button" class="sbar" data-variant="1103" data-stock="40" aria-pressed="false"><i class="sw mat-stratifie" style="--c:#1c1c1d"></i><span class="n">Stratifié noir · 70 × 70 cm</span><span class="track"><span style="transform:scaleX(0.667)"></span></span><span class="v mono">40 Stück</span></button><button type="button" class="sbar" data-variant="1104" data-stock="12" aria-pressed="false"><i class="sw mat-stratifie" style="--c:#1c1c1d"></i><span class="n">Stratifié noir · 80 × 80 cm</span><span class="track"><span style="transform:scaleX(0.2)"></span></span><span class="v mono">12 Stück</span></button><button type="button" class="sbar is-order" data-variant="1105" data-stock="0" aria-pressed="false"><i class="sw mat-stratifie" style="--c:#1c1c1d"></i><span class="n">Stratifié noir · Ø 70 cm</span><span class="track"><span style="transform:scaleX(0)"></span></span><span class="v">3 bis 4 Wochen</span></button><button type="button" class="sbar is-order" data-variant="1106" data-stock="0" aria-pressed="false"><i class="sw mat-stratifie" style="--c:#efede8"></i><span class="n">Stratifié blanc · 60 × 60 cm</span><span class="track"><span style="transform:scaleX(0)"></span></span><span class="v">3 bis 4 Wochen</span></button><button type="button" class="sbar is-order" data-variant="1107" data-stock="0" aria-pressed="false"><i class="sw mat-stratifie" style="--c:#efede8"></i><span class="n">Stratifié blanc · 70 × 70 cm</span><span class="track"><span style="transform:scaleX(0)"></span></span><span class="v">3 bis 4 Wochen</span></button><button type="button" class="sbar is-order" data-variant="1108" data-stock="0" aria-pressed="false"><i class="sw mat-stratifie" style="--c:#efede8"></i><span class="n">Stratifié blanc · 80 × 80 cm</span><span class="track"><span style="transform:scaleX(0)"></span></span><span class="v">3 bis 4 Wochen</span></button><button type="button" class="sbar is-order" data-variant="1109" data-stock="0" aria-pressed="false"><i class="sw mat-stratifie" style="--c:#efede8"></i><span class="n">Stratifié blanc · Ø 70 cm</span><span class="track"><span style="transform:scaleX(0)"></span></span><span class="v">3 bis 4 Wochen</span></button><button type="button" class="sbar is-order" data-variant="1110" data-stock="0" aria-pressed="false"><i class="sw mat-stratifie" style="--c:#9d9a94"></i><span class="n">Stratifié béton · 60 × 60 cm</span><span class="track"><span style="transform:scaleX(0)"></span></span><span class="v">3 bis 4 Wochen</span></button><button type="button" class="sbar is-order" data-variant="1111" data-stock="0" aria-pressed="false"><i class="sw mat-stratifie" style="--c:#9d9a94"></i><span class="n">Stratifié béton · 70 × 70 cm</span><span class="track"><span style="transform:scaleX(0)"></span></span><span class="v">3 bis 4 Wochen</span></button><button type="button" class="sbar is-order" data-variant="1112" data-stock="0" aria-pressed="false"><i class="sw mat-stratifie" style="--c:#9d9a94"></i><span class="n">Stratifié béton · 80 × 80 cm</span><span class="track"><span style="transform:scaleX(0)"></span></span><span class="v">3 bis 4 Wochen</span></button><button type="button" class="sbar" data-variant="1113" data-stock="16" aria-pressed="false"><i class="sw mat-stratifie" style="--c:#9d9a94"></i><span class="n">Stratifié béton · Ø 70 cm</span><span class="track"><span style="transform:scaleX(0.267)"></span></span><span class="v mono">16 Stück</span></button></div>
+    </div>
+  </section>
+
+  <section class="section-tight wrap" aria-labelledby="h-spec">
+    <div class="section-head"><div><span class="eyebrow">Herstellerangaben</span><h2 id="h-spec">Technisches Datenblatt</h2></div><button class="sheet-btn" type="button" data-sheet-pdf><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 4v11m-4.5-4.5L12 15l4.5-4.5"/><path d="M5 19.5h14"/></svg>
+<span>Technisches Datenblatt herunterladen (PDF)</span></button></div>
+    <div class="specs">
+  <div class="spec"><span class="k">Abmessungen</span><span class="v mono">60 × 60 · 70 × 70 · 80 × 80 · Ø 70 cm · H 75 cm</span></div><div class="spec"><span class="k">Gewicht</span><span class="v mono">19 kg</span></div><div class="spec"><span class="k">Stapelbar</span><span class="v">Nein</span></div>
+  <div class="spec"><span class="k">Einsatz</span><span class="v">Innen</span></div><div class="spec"><span class="k">Gestell</span><span class="v">Plateau stratifié HPL 19 mm, chant ABS 2 mm ; piètement fonte thermolaquée noire, colonne Ø 76 mm, vérin de réglage</span></div><div class="spec"><span class="k">Ausführungen</span><span class="v">Stratifié chêne clair · Stratifié noir · Stratifié blanc · Stratifié béton</span></div><div class="spec"><span class="k">Kompatibilität</span><span class="v">Embase 45 × 45 cm jusqu&#39;à 70 × 70 cm et Ø 70 cm ; 55 × 55 cm pour 80 × 80 cm</span></div><div class="spec"><span class="k">Festigkeit, Objektbereich</span><span class="v"><span class="badge">EN 15372 · Stufe 2, intensive Nutzung</span></span></div><div class="spec"><span class="k">Garantie</span><span class="v">3 Jahre, gewerbliche Nutzung</span></div><div class="spec"><span class="k">Montage</span><span class="v">Plateau vissé sur la platine, 4 vis fournies</span></div><div class="spec"><span class="k">Pflege</span><span class="v">Plateau : eau savonneuse ; pas de produit abrasif</span></div><div class="spec"><span class="k">Verkauf</span><span class="v">Stückweise · 3 bis 4 Wochen</span></div>
+  <div class="spec"><span class="k">Verfügbarkeit</span><span class="v">Auf Lager: Versand innerhalb von 5 Werktagen · auf Bestellung: 3 bis 4 Wochen</span></div><div class="spec"><span class="k">Bereiche</span><span class="v">Restaurant · Bar & Café</span></div><div class="spec"><span class="k">Herstellung</span><span class="v">Italie</span></div></div>
+
+    <div class="perf-cards" data-reveal aria-label="Leistung"><div class="gauge tilt">
+      <div class="g-h"><span>Objektbereich</span><b class="mono">Stufe 2</b></div>
+      <div class="g-bar"><i class="on" style="--i:1"></i><i class="on" style="--i:2"></i><i class="on" style="--i:3"></i><i class="on" style="--i:4"></i><i class="on" style="--i:5"></i><i class="on" style="--i:6"></i><i class="on" style="--i:7"></i><i class="on" style="--i:8"></i><i class="on" style="--i:9"></i><i class="on" style="--i:10"></i><i class="on" style="--i:11"></i><i class="on" style="--i:12"></i><i class="on" style="--i:13"></i><i class="on" style="--i:14"></i><i class="on" style="--i:15"></i><i class="on" style="--i:16"></i><i class="on" style="--i:17"></i><i class="on" style="--i:18"></i><i class="on" style="--i:19"></i><i class="on" style="--i:20"></i></div>
+      <span class="g-level">Intensive Nutzung</span>
+      <small>Festigkeits- und Dauerhaltbarkeitsprüfungen nach den europäischen Normen für Möbel im Nicht-Wohnbereich (EN 16139 für Sitzmöbel, EN 15372 für Tische).</small>
+      <span class="glare" aria-hidden="true"></span>
+    </div><div class="gauge tilt">
+      <div class="g-h"><span>Garantie</span><b class="mono"><span data-count-to="3">3</span> Jahre</b></div>
+      <div class="g-bar"><i class="on" style="--i:1"></i><i class="on" style="--i:2"></i><i class="on" style="--i:3"></i><i class="on" style="--i:4"></i><i class="on" style="--i:5"></i><i class="on" style="--i:6"></i><i style="--i:7"></i><i style="--i:8"></i><i style="--i:9"></i><i style="--i:10"></i><i style="--i:11"></i><i style="--i:12"></i><i style="--i:13"></i><i style="--i:14"></i><i style="--i:15"></i><i style="--i:16"></i><i style="--i:17"></i><i style="--i:18"></i><i style="--i:19"></i><i style="--i:20"></i></div>
+      <small>Herstellergarantie bei gewerblicher Nutzung, ausgenommen normaler Verschleiß des Stoffes.</small>
+      <span class="glare" aria-hidden="true"></span>
+    </div></div>
+
+  </section>
+
+  <section class="section-tight wrap" data-coord-section aria-labelledby="h-coord" hidden>
+    <div class="section-head"><div><span class="eyebrow">Gleiche Farbtöne, andere Möbel</span><h2 id="h-coord">Passt zu <span data-coord-name></span></h2></div></div>
+    <div class="row-scroll" data-coord></div>
+  </section><div class="buybar" data-buybar aria-hidden="true">
+      <div class="wrap buybar-in">
+        <i class="sw" data-bb-sw></i>
+        <span class="bb-t"><b>Ardoise</b><span data-bb-sub></span></span>
+        <span class="bb-p" data-bb-p></span>
+        <button class="btn" type="button" data-bb-add tabindex="-1">In den Warenkorb</button>
+      </div>
+    </div></dt-product>
+
+
+</div>
+    </main>
+    <div id="shopify-section-footer" class="shopify-section"><footer class="ftr">
+  <div class="wrap ftr-grid">
+    <div class="ftr-brand">
+      <a class="logo logo-sm" href="/direct-mobilier-demo/de" aria-label="Direct Mobilier, Startseite">
+  <span class="logo-a">DIRECT</span><span class="logo-rule" aria-hidden="true"></span><span class="logo-b">MOBILIER</span>
+</a>
+
+      <p>Einkaufszentrale für Hotel- und Gastronomiemöbel, direkt von europäischen Herstellern.</p>
+      <form method="post" action="/direct-mobilier-demo/localization" class="lang"><label class="vh" for="lang-footer">Sprache</label>
+    <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="8.5"/><path d="M3.5 12h17M12 3.5c2.4 2.4 3.6 5.2 3.6 8.5s-1.2 6.1-3.6 8.5c-2.4-2.4-3.6-5.2-3.6-8.5s1.2-6.1 3.6-8.5Z"/></svg>
+
+    <select id="lang-footer" name="locale_code" data-lang><option value="fr" lang="fr">Français</option><option value="en" lang="en">English</option><option value="de" lang="de" selected>Deutsch</option><option value="it" lang="it">Italiano</option></select>
+    <noscript><button class="btn btn-sm btn-ghost" type="submit">OK</button></noscript></form>
+    </div><div>
+          <h3>Informations</h3><a href="/direct-mobilier-demo/policies/terms-of-service">Conditions générales</a></div><div>
+      <h3>Bedingungen</h3>
+      <span>Lagerware versandt innerhalb von 5 Werktagen</span><span>Lieferung frei Haus ab 3.000 € zzgl. MwSt.</span>
+      <span>Lieferung nach Terminvereinbarung</span>
+    </div>
+    <div>
+      <h3>Gruppe DIRECT</h3>
+      <span>Direct CHR</span><a href="https://textile.directchr.com">Direct Textile</a><span>Direct Sol</span><span>Direct Literie</span>
+    </div>
+  </div>
+  <div class="wrap ftr-legal">
+    <span>© 2026 Direct Mobilier</span>
+    <span>Shop nur für Gewerbekunden</span></div>
+</footer>
+
+
+</div>
+    <div class="scrim" id="scrim" hidden></div><div id="shopify-section-cart-drawer" class="shopify-section"><dt-cart-drawer class="drawer" id="cart" aria-label="Warenkorb" hidden>
+    <div class="cart-content" data-cart-content data-count="0">
+      <div class="drawer-head"><h2>Warenkorb</h2><button class="close" type="button" data-close aria-label="Schließen"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m6 6 12 12M18 6 6 18"/></svg>
+</button></div><div class="drawer-body"><div class="empty-cart"><strong>Ihr Warenkorb ist leer.</strong><a class="btn" href="/direct-mobilier-demo/de/collections/all">Zum Katalog</a></div></div>
+    </div>
+  </dt-cart-drawer></div><aside class="sheet" id="sheet" aria-label="Filter" hidden></aside>
+    <div class="toasts" id="toasts" aria-live="polite"></div>
+  </body>
+</html>
